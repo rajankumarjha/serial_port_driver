@@ -1,0 +1,76 @@
+#include "headers.h"
+#include "decleration.h"
+
+//========================================================================================
+//                      printData on qunatums
+//========================================================================================
+int printQunatumData1(struct myQset *qs, int noi)
+{
+        int i, j;
+        printk(KERN_INFO "\n");
+        for(j=0;j<noi;j++)
+        {
+                if(j<(noi-1))
+                {
+                        for(i=0;i<8;i++)
+                        {
+                                printk(KERN_INFO "%.4s",(char*)qs->data[i]);
+                        }
+                        qs = qs->next;
+                }
+                else
+                {
+                        printk(KERN_INFO "%.4s",(char*)qs->data[0]);
+                }
+        }
+        return 0;
+}
+//========================================================================================
+//                      readDev::read data from qunatums
+//========================================================================================
+ssize_t readDev(struct file *filep, char __user *buff, size_t dataCount, loff_t *f_pos)
+{
+	int nocsr=0, ret, noi, i, k;
+	struct myDev *dvs;
+	struct myQset *qs;
+	printk(KERN_INFO "Begin:%s\n",__func__);
+
+	dvs = filep->private_data;
+       	qs = dvs->data;	
+	printk(KERN_INFO "filep->f_pos:%lld  sizeof buff:%lu ,dataCount:%ld, *f_pos:%lld data_size:%ld\n",filep->f_pos, strlen(buff),dataCount,*f_pos, dvs->size);
+
+	noi = (dvs->size)/(no_of_registers*size_of_registers); /* items/qset node required */
+        if((dvs->size)%(no_of_registers*size_of_registers)!=0)
+                noi++;
+
+        printk(KERN_INFO "noi%d\n",noi);
+	//----------------------------------------------------------------
+	for(k=0;k<noi-1;k++)
+        {
+                for(i=0;i<8;i++)
+                {
+                        ret = copy_to_user(buff+nocsr,(char*)qs->data[i],size_of_registers);
+                        if(!ret)
+                        {
+                                nocsr = nocsr + size_of_registers;
+                                *f_pos = nocsr;
+                                filep->f_pos = nocsr;
+                                printk(KERN_INFO "nocsr:%d\n",nocsr);
+                        }
+                }
+                qs = qs->next;
+        }
+        ret = copy_to_user(buff+nocsr,(char*)qs->data[i],size_of_registers);
+        if(!ret)
+        {
+                nocsr = nocsr + size_of_registers;
+                *f_pos = nocsr;
+                printk(KERN_INFO "remainsBytes:%ld nocsr:%d *f_pos:%lld \n",(dvs->size)-nocsr, nocsr, *f_pos);
+        }
+        dvs->size = nocsr;
+        printk(KERN_INFO "nocsr:%d *f_pos:%lld dvs->size:%ld\n", nocsr, *f_pos,dvs->size);
+        qs = dvs->data;
+	//----------------------------------------------------------------
+	printk(KERN_INFO "End:%s\n",__func__);
+	return 0;
+}

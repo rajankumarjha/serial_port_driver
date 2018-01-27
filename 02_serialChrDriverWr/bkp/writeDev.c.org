@@ -1,0 +1,154 @@
+#include "headers.h"
+#include "decleration.h"
+
+//========================================================================================
+//			get the new qset node
+//========================================================================================
+struct myQset * getAddNewItems(struct myQset *strtQset)
+{
+	struct myQset *nwQset;
+	if(!strtQset->next)
+	{
+		nwQset = kmalloc(sizeof(struct myQset), GFP_KERNEL);
+		memset(nwQset,0,sizeof(struct myQset));
+		strtQset->next = nwQset;
+	}
+	else
+	{
+		return strtQset;
+	}
+	return nwQset; 
+}       
+//========================================================================================
+//			printData on qunatums
+//========================================================================================
+int printQunatumData(struct myQset *qs, int noi)
+{
+	int i, j;
+	printk(KERN_INFO "\n");
+        for(j=0;j<noi;j++)
+        {
+                if(j<(noi-1))
+                {
+                        for(i=0;i<8;i++)
+                        {
+                                printk(KERN_INFO "%.4s",(char*)qs->data[i]);
+                        }
+                        qs = qs->next;
+                }
+                else
+                {
+                        printk(KERN_INFO "%.4s",(char*)qs->data[0]);
+                }
+        }
+	return 0;
+}
+
+//=========================================================================================
+//			kernel dev write calls
+//=========================================================================================
+ssize_t writeDev(struct file *filep, const char __user *buff, size_t count, loff_t *f_pos)
+{
+	struct myDev *dvs;
+	struct myQset *qs;
+	int quantum, qset, ret, noi, i, j, k;			//noi: number of items
+
+	int byteRemains = strlen(buff);
+	int nocsw = 0;
+
+	printk(KERN_INFO "Begin:%s\n",__func__);
+	dvs = filep->private_data;
+	quantum = dvs->quantum;
+	qset = dvs->qset;
+	//-----------------------------------------------------------------
+	//		three step checks
+	//-----------------------------------------------------------------
+	if((filep->f_flags & O_ACCMODE)!=O_WRONLY)	/*check if it opened in write mode*/
+        {
+                printk(KERN_INFO "error! f_flag not O_WRONLY!!\n");
+                goto out;
+        }
+	if(!buff || (count <=0))			/*check if buff is not null*/
+	{
+		printk(KERN_INFO "error! buff is null!!\n");
+                goto out;
+	}
+	//-----------------------------------------------------------------
+	printk(KERN_INFO "sizeof buff:%lu ,count:%ld\n",strlen(buff),count);
+	noi = strlen(buff)/(no_of_registers*size_of_registers); /* items/qset node required */
+	if(strlen(buff)%(no_of_registers*size_of_registers)!=0)
+		noi++;
+
+	printk(KERN_INFO "noi%d\n",noi);
+
+	for(i=0;i<noi;i++)
+	{
+		if(i==0)				/* Allocating first qset */
+		{
+			qs = dvs->data;
+			qs = dvs->data = kmalloc(sizeof(struct myQset), GFP_KERNEL);
+			memset(qs,0,sizeof(struct myQset));
+		}
+		else					/* Allocating rest of qset */
+		{
+			qs = getAddNewItems(qs);
+		}
+	}
+	qs = dvs->data;					/* get the original start node*/
+	for(i=0;i<noi;i++)
+	{
+		if(!qs)					
+		{
+			goto out;
+		}
+		if(i<(noi-1))				/* allocate memory for each quantums registers */
+		{
+			qs->data = kmalloc(no_of_registers * sizeof(char *), GFP_KERNEL);
+			memset(qs->data, 0, no_of_registers * sizeof(char *));
+			for(j=0;j<8;j++)
+			{
+				qs->data[j]=kmalloc(size_of_registers * sizeof(char *), GFP_KERNEL);
+			}
+		}
+		else
+		{
+			qs->data = kmalloc((strlen(buff)%(no_of_registers*size_of_registers)) * sizeof(char *), GFP_KERNEL); //remaining registers
+			memset(qs->data, 0, (strlen(buff)%(no_of_registers*size_of_registers)) * sizeof(char *));
+			qs->data[0]=kmalloc(size_of_registers * sizeof(char *), GFP_KERNEL);
+		}
+		qs = qs->next;				/* for next poiting qsets */
+	}
+	printk(KERN_INFO "byteRemains:%d\n",byteRemains);
+	qs = dvs->data;
+	for(k=0;k<noi-1;k++)
+	{
+		for(i=0;i<8;i++)
+		{
+			ret = copy_from_user((char*)qs->data[i],buff+nocsw,size_of_registers);
+			if(!ret)
+			{
+				nocsw = nocsw + size_of_registers;
+				*f_pos = nocsw;
+				filep->f_pos = nocsw;	
+				printk(KERN_INFO "remainsBytes:%ld nocsw:%d *f_pos:%lld \n",count-nocsw, nocsw, *f_pos);
+			}
+		}
+		qs = qs->next;
+	}
+	ret = copy_from_user((char*)qs->data[0],buff+nocsw,size_of_registers);
+	if(!ret)
+	{
+		nocsw = nocsw + size_of_registers;
+		*f_pos = nocsw;
+		printk(KERN_INFO "remainsBytes:%ld nocsw:%d *f_pos:%lld \n",count-nocsw, nocsw, *f_pos);
+	}
+	dvs->size = nocsw;
+	printk(KERN_INFO "nocsw:%d *f_pos:%lld dvs->size:%ld\n", nocsw, *f_pos,dvs->size);
+	qs = dvs->data;
+
+	printQunatumData(qs, noi);	/*see if data is correctly stored in quantums*/
+	return 0;
+
+out:
+	return -1;
+}

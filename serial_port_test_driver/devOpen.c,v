@@ -1,0 +1,494 @@
+head	1.25;
+access;
+symbols;
+locks
+	emblogic:1.25; strict;
+comment	@ * @;
+
+
+1.25
+date	2017.12.04.11.15.53;	author kartikgupta;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.12.04.09.58.01;	author kartikgupta;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2017.11.25.12.58.28;	author kartikgupta;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.11.25.12.53.26;	author kartikgupta;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.11.25.12.47.42;	author kartikgupta;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.11.25.10.53.46;	author kartikgupta;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.11.24.05.56.04;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.11.24.05.53.13;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.11.23.00.05.33;	author kartikgupta;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.11.22.00.06.32;	author kartikgupta;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.11.22.00.03.47;	author kartikgupta;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.11.20.00.26.48;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.11.20.00.24.54;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.11.17.10.41.24;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.11.17.04.08.35;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.11.12.07.48.44;	author root;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.11.12.07.45.51;	author root;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.11.09.06.41.13;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.11.08.17.52.38;	author root;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.11.08.17.29.27;	author root;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.11.08.17.27.31;	author root;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.11.08.17.17.14;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.11.01.16.11.53;	author root;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.11.01.16.10.42;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.11.01.15.49.21;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@open device routine local pointer fetch from container_of
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@#include"header.h"
+#include"declaration.h"
+
+int devOpen(struct inode *inodep,struct file *filp)
+{
+    
+    Dev *devlp;
+    int ret;
+   // static int s=0;
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :Begin\n",__func__);
+    #endif
+   // if(s==0)
+   { 
+    devlp=container_of(inodep->i_cdev,Dev,c_dev);
+    if(!devlp)
+    {
+      #ifdef DEBUG
+      printk(KERN_INFO "container_of:\n");
+      #endif
+      goto ERR; 
+    }
+   // s++;
+    filp->private_data=devlp;          //storing local pointer inside private data part of struct file(preserve the device)    
+   } 
+    
+      #ifdef DEBUG
+      printk(KERN_INFO "devlp address is %p\n",devlp);
+      #endif
+      #ifdef DEBUG
+      printk(KERN_INFO "devlp address is %p\n",filp->private_data);
+      #endif
+    // check access mode
+
+    if((filp->f_flags & O_ACCMODE)==O_WRONLY)                    //?? doubt true for both read and write only mode
+     {
+           ret=devTrim(devlp);
+          // ret=devTrim(filp->private_data);
+     }
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End\n",__func__);
+    #endif
+    return 0;
+ 
+  ERR:   
+    	#ifdef DEBUG
+    	printk(KERN_ERR "%s end with Error\n",__func__);
+    	#endif
+    	return -1;
+}
+
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d36 1
+a36 1
+    if((filp->f_mode & O_ACCMODE)==O_WRONLY)                    //?? doubt true for both read and write only mode
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d36 1
+a36 1
+    if((filp->f_mode && O_ACCMODE)==O_WRONLY)                    //?? doubt true for both read and write only mode
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    static int s=0;
+d14 1
+a14 1
+    if(s==0)
+d24 1
+a24 1
+    s++;
+d36 1
+a36 1
+    if((filp->f_mode && O_ACCMODE)==O_WRONLY)
+d38 2
+a39 2
+           //ret=devTrim(devlp);
+           ret=devTrim(filp->private_data);
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d24 2
+a25 1
+    s++; 
+a26 1
+    filp->private_data=devlp;          //storing local pointer inside private data part of struct file(preserve the device)
+d31 3
+d38 2
+a39 1
+           ret=devTrim(devlp);
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d9 1
+d14 2
+a15 1
+ 
+d23 3
+a25 2
+    } 
+    
+@
+
+
+1.19
+log
+@&& used instead of &
+@
+text
+@d26 1
+a26 1
+      printk(KERN_INFO "devlp address is %x\n",(unsigned int)devlp);
+@
+
+
+1.18
+log
+@access mode is set to writeonly
+@
+text
+@d30 1
+a30 1
+    if((filp->f_mode & O_ACCMODE)==O_WRONLY)
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+    if((filp->f_mode & O_ACCMODE)==O_RDWR)
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+    if((filp->f_mode && O_ACCMODE)==O_RDWR)
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+    if((filp->f_mode && O_ACCMODE)==RDWR)
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+    if((filp->f_mode && O_ACCMODE)==O_WRONLY)
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d26 1
+a26 1
+      printk(KERN_INFO "devlp address is %x\n",devlp);
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d25 3
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+    devlp=container_of(inodep->i_rdev,Dev,c_dev);
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d9 1
+d14 1
+a14 1
+    devlp=container_of(inodep->i_cdev,Dev,c_dev);
+d19 2
+a20 1
+      #endif   
+a34 1
+   
+d36 6
+@
+
+
+1.9
+log
+@\O_ACCMODE is removed
+@
+text
+@d25 1
+a25 1
+    if((filp->f_mode)==O_WRONLY)
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d25 1
+a25 1
+    if((filp->f_mode && O_ACCMODE)==O_WRONLY)
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d25 1
+a25 1
+    if((filp->f_mode & O_ACCMODE)==O_WRONLY)
+@
+
+
+1.6
+log
+@O_WRONLY is used
+@
+text
+@d25 1
+a25 1
+    if((filp->f_mode && O_ACCMODE)==O_WRONLY)
+@
+
+
+1.5
+log
+@filp is used
+@
+text
+@d25 1
+a25 1
+    if((filp->f_mode && O_ACCMODE)==WRONLY)
+@
+
+
+1.4
+log
+@check access mode
+@
+text
+@d25 1
+a25 1
+    if((devlp->f_mode && O_ACCMODE)==WRONLY)
+@
+
+
+1.3
+log
+@c_dev member used for Dev str
+@
+text
+@d8 1
+a8 1
+   
+d21 8
+a28 1
+    filp->private_data=devlp;          //storing local pointer inside private data part of struct file
+@
+
+
+1.2
+log
+@i_cdev replaced with cdev in inode str
+@
+text
+@d13 1
+a13 1
+    devlp=container_of(inodep->i_cdev,Dev,cdev);
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d13 1
+a13 1
+    devlp=container_of(inodep->cdev,Dev,cdev);
+@

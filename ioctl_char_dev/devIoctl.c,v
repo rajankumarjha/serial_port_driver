@@ -1,0 +1,481 @@
+head	1.20;
+access;
+symbols;
+locks
+	root:1.20; strict;
+comment	@ * @;
+
+
+1.20
+date	2017.12.23.07.06.38;	author emblogic;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.12.18.21.09.39;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.12.18.21.08.41;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.12.18.20.44.40;	author kartikgupta;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.12.18.20.26.04;	author kartikgupta;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.12.18.20.22.44;	author kartikgupta;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.12.18.19.52.22;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.12.18.19.50.50;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.12.18.11.47.16;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.12.18.11.37.18;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.12.18.11.08.32;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.12.18.05.44.05;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.12.18.05.41.07;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.12.18.01.32.45;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.12.18.01.32.17;	author kartikgupta;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.12.18.01.11.26;	author kartikgupta;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.12.17.16.56.38;	author kartikgupta;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.12.17.16.56.03;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.12.17.16.54.33;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.12.15.20.49.10;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@#include"header.h"
+#include"declaration.h"
+#include"ioctl.h"
+
+long devIoctl(struct file *filp,unsigned int request,unsigned long arg)
+{
+    Dev *ldev=NULL;    
+    int para=0;
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :Begin\n",__func__);
+    #endif
+ 
+    ldev=filp->private_data;
+    printk(KERN_INFO "request is %u\n",request); 
+    switch(request)
+    {
+      case DEVRESET:
+                       printk("Dev Reset demanded\n");
+                       devTrim(ldev);
+                       break;
+      case GETREGSIZE:
+                       printk("Get Reg size selected\n");
+		       if(access_ok(VERIFY_READ,(void __user*)arg,sizeof(int)))       //returns 1 for success
+                       put_user(ldev->register_size,(int __user*)arg);  //get_user and put_user used to print single values(int,char,long) for larger buffer copy_from_user and copy_to_user can be used                        
+                       break;
+      case GETREGNO:   
+                       printk("Get Res no selected\n");
+		       if(access_ok(VERIFY_READ,(void __user*)arg,sizeof(int)))  
+                       put_user(ldev->register_no,(int __user*)arg);
+                       break;
+      case GETDEVSIZE:
+                       printk("Get dev size selected\n");
+		       if(access_ok(VERIFY_READ,(void __user*)arg,sizeof(int)))   
+                       put_user(ldev->device_size,(int __user*)arg);
+                       break;
+      case GETDATASIZE:
+                       printk("Get data size selected\n");
+		       if(access_ok(VERIFY_READ,(void __user*)arg,sizeof(int)))    
+                       put_user(ldev->data_size,(int __user*)arg);
+                       break;
+      case GETBAUDRATE:
+                       printk("Get baud rate selected\n");
+                       break;
+      case SETREGSIZE: 
+                       printk("Set reg size selected\n");
+		       if(!capable(CAP_SYS_ADMIN))
+		        {
+			    printk(KERN_INFO "error:capable\n");
+			    goto ERR;
+			}
+		       if(access_ok(VERIFY_WRITE,(void __user*)arg,sizeof(int)))    
+		       		get_user(para,(int __user*)arg); 
+		       printk("reg size. is %d\n",para); 
+		       ldev->register_size=para;
+		       register_size=para;
+                       break;
+      case SETREGNO:   
+                       printk("Set reg no selected\n");
+		       if(!capable(CAP_SYS_ADMIN))
+		        {
+			    printk(KERN_INFO "error:capable\n");
+			    goto ERR;
+			}
+		       if(access_ok(VERIFY_WRITE,(void __user*)arg,sizeof(int)))     
+		       		get_user(para,(int __user*)arg); 
+		       printk("reg no. is %d\n",para); 
+		       ldev->register_no=para;
+		       register_no=para;
+                       break;
+      case SETBAUDRATE:
+                       printk("Set baud rate selected\n");
+                       break;
+      default:
+                       printk("invalid choice\n");
+    }
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End\n",__func__);
+    #endif
+   
+    return 0;
+
+   ERR:
+           
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End with error\n",__func__);
+    #endif
+    return -1;
+}
+
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+    int para;
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d48 1
+a48 1
+			    printk(KERN ERR "error:capable\n");
+d61 1
+a61 1
+			    printk(KERN ERR "error:capable\n");
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+    printk("request is %u\n",request); 
+d45 6
+a50 1
+                       printk("Set reg size selected\n"); 
+d59 5
+d82 7
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d23 1
+d28 1
+d33 1
+d38 1
+d46 2
+a47 1
+		       get_user(para,(int __user*)arg); 
+d54 2
+a55 1
+		       get_user(para,(int __user*)arg); 
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+    printk("request is %d\n",request); 
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+    
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@a27 1
+                       printk("value of reg no is %d\n",arg);
+a31 1
+                       printk("value of reg no is %d\n",arg);
+a35 1
+                       printk("value of reg no is %d\n",arg);
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+    struct parameters para;
+d23 1
+a23 1
+                       put_user(ldev->register_size,(int __user*)arg);                        
+d28 1
+a28 1
+                       printk("value of reg no is %d\n",para.regno);
+d32 2
+d37 2
+d44 5
+a48 2
+                       printk("Set reg size selected\n");
+		        
+d52 4
+a55 2
+		       get_user(para.regno,(int __user*)arg); 
+		       printk("reg no. is %d",para.regno); 
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+                       printk("value of test var is %d\n",para.regno);
+d43 1
+a43 1
+      case SETREGNO:
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                       get_user(ldev->register_no,(int __user*)arg);
+d39 1
+a39 1
+      case SETREGSIZE:
+d41 1
+d45 2
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                       get_user(para.regno,(int __user*)arg);
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d23 1
+a23 1
+                       put_user(ldev->register_size,(struct parameters __user*)arg);                        
+d27 1
+a27 1
+                       get_user(para.regno,(struct parameters __user*)arg);
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+    int testvar=0;
+d23 1
+a23 1
+                       put_user(ldev->register_size,(int __user*)arg);                        
+d27 2
+a28 2
+                       get_user(testvar,(int __user*)arg);
+                       printk("value of test var is %d\n",testvar);
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                       get_user(testvar,(int __user)*arg);
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+    
+d23 1
+a23 1
+                       put_user(ldev->register_size,(int __user*)arg);
+d25 1
+a25 1
+      case GETREGNO:
+d27 2
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d19 1
+d23 1
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d3 1
+a3 1
+#include<ioctl.h>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d3 1
+d7 1
+d13 1
+a13 2
+    Dev *ldev=NULL;    
+    ldev->private_data;
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 1
+a4 1
+long devIoctl(struct file *filp,unsigned int orno ,unsigned long arg)
+d11 2
+d14 32
+@

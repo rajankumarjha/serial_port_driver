@@ -1,0 +1,126 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFSIZE	chrDeviceDriver/decleration.h	17;"	d
+BUFSIZE	decleration.h	17;"	d
+CONFIG_MODULE_SIG	Makefile	/^CONFIG_MODULE_SIG=n$/;"	m
+CONFIG_MODULE_SIG	chrDeviceDriver/Makefile	/^CONFIG_MODULE_SIG=n$/;"	m
+DEVNAME	chrDeviceDriver/decleration.h	5;"	d
+DEVNAME	decleration.h	5;"	d
+DEVNO	chrDeviceDriver/decleration.h	13;"	d
+DEVNO	decleration.h	13;"	d
+DEV_SIZE	decleration.h	32;"	d
+INSTALL_DIR	Makefile	/^INSTALL_DIR=modules$/;"	m
+INSTALL_DIR	chrDeviceDriver/Makefile	/^INSTALL_DIR=modules$/;"	m
+KERNELDIR	Makefile	/^	KERNELDIR ?= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KERNELDIR	chrDeviceDriver/Makefile	/^	KERNELDIR ?= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+MAJORNO	chrDeviceDriver/decleration.h	9;"	d
+MAJORNO	decleration.h	9;"	d
+METHOD_ALLOC_CHARDEV	chrDeviceDriver/decleration.h	30;"	d
+METHOD_ALLOC_CHARDEV	decleration.h	53;"	d
+NUM_QSET	decleration.h	49;"	d
+NUM_QUANTUM	decleration.h	45;"	d
+NUM_REGISTRES	chrDeviceDriver/decleration.h	21;"	d
+NUM_REGISTRES	decleration.h	21;"	d
+PWD	Makefile	/^	PWD := $(shell pwd)$/;"	m
+PWD	chrDeviceDriver/Makefile	/^	PWD := $(shell pwd)$/;"	m
+READ_MODE	application/myApp.c	3;"	d	file:
+SIZ_REGISTRES	chrDeviceDriver/decleration.h	25;"	d
+SIZ_REGISTRES	decleration.h	25;"	d
+WRITE_MODE	application/myApp.c	4;"	d	file:
+__DECLERATION_H_	application/decleration.h	2;"	d
+__DECLERATION_H_	chrDeviceDriver/application/decleration.h	2;"	d
+__HEADERS_H_	application/headers.h	2;"	d
+__HEADERS_H_	chrDeviceDriver/application/headers.h	2;"	d
+__HEADERS_H_	chrDeviceDriver/headers.h	2;"	d
+__HEADERS_H_	headers.h	2;"	d
+__this_module	chrDeviceDriver/modules/myChrDev.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	modules/myChrDev.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	chrDeviceDriver/modules/myChrDev.mod.c	/^__used$/;"	v	file:
+__used	modules/myChrDev.mod.c	/^__used$/;"	v	file:
+access_key	chrDeviceDriver/decleration.h	/^   unsigned int access_key;  \/* used by sculluid and scullpriv *\/$/;"	m	struct:myDev
+access_key	decleration.h	/^   unsigned int access_key;  \/* used by sculluid and scullpriv *\/$/;"	m	struct:myDev
+cdev	chrDeviceDriver/decleration.h	/^   struct cdev cdev;         \/* Char device structure              *\/$/;"	m	struct:myDev	typeref:struct:myDev::cdev
+cdev	decleration.h	/^   struct cdev cdev;         \/* Char device structure              *\/$/;"	m	struct:myDev	typeref:struct:myDev::cdev
+chooseOpenReadMode	application/mainMenu.c	/^int chooseOpenReadMode()$/;"	f
+comp	decleration.h	/^   struct completion comp;$/;"	m	struct:myDev	typeref:struct:myDev::completion
+compileApp	chrDeviceDriver/runScript	/^compileApp()$/;"	f
+compileApp	runScript	/^compileApp()$/;"	f
+data	chrDeviceDriver/decleration.h	/^   struct myQset *data;  \/* Pointer to first quantum set *\/$/;"	m	struct:myDev	typeref:struct:myDev::myQset
+data	chrDeviceDriver/decleration.h	/^   void **data;$/;"	m	struct:myQset
+data	decleration.h	/^   struct myQset *data;  \/* Pointer to first quantum set *\/$/;"	m	struct:myDev	typeref:struct:myDev::myQset
+data	decleration.h	/^   void **data;$/;"	m	struct:myQset
+delMyDevices	chrDeviceDriver/clean.c	/^int delMyDevices(void)$/;"	f
+delMyDevices	clean.c	/^int delMyDevices(void)$/;"	f
+devId	chrDeviceDriver/init.c	/^dev_t devId =0;$/;"	v
+devId	init.c	/^dev_t devId =0;$/;"	v
+devSize	init.c	/^int devSize = DEV_SIZE;$/;"	v
+devno	chrDeviceDriver/init.c	/^int devno   = 	DEVNO;      \/* number of bare scull devices *\/$/;"	v
+devno	init.c	/^int devno   = 	DEVNO;      \/* number of bare scull devices *\/$/;"	v
+fops	chrDeviceDriver/init.c	/^static struct file_operations fops = {$/;"	v	typeref:struct:file_operations	file:
+fops	init.c	/^static struct file_operations fops = {$/;"	v	typeref:struct:file_operations	file:
+getAddNewItems	chrDeviceDriver/writeDev.c	/^struct myQset * getAddNewItems(struct myQset *strtQset)$/;"	f
+getAddNewItems	writeDev.c	/^struct myQset * getAddNewItems(struct myQset *strtQset)$/;"	f
+helloKernel_exit	chrDeviceDriver/clean.c	/^module_exit(helloKernel_exit);$/;"	v
+helloKernel_exit	chrDeviceDriver/clean.c	/^static void __exit helloKernel_exit(void)$/;"	f	file:
+helloKernel_exit	clean.c	/^module_exit(helloKernel_exit);$/;"	v
+helloKernel_exit	clean.c	/^static void __exit helloKernel_exit(void)$/;"	f	file:
+helloKernel_init	chrDeviceDriver/init.c	/^module_init(helloKernel_init);$/;"	v
+helloKernel_init	chrDeviceDriver/init.c	/^static int __init helloKernel_init(void)$/;"	f	file:
+helloKernel_init	init.c	/^module_init(helloKernel_init);$/;"	v
+helloKernel_init	init.c	/^static int __init helloKernel_init(void)$/;"	f	file:
+insertModule	chrDeviceDriver/runScript	/^insertModule()$/;"	f
+insertModule	runScript	/^insertModule()$/;"	f
+llseekDev	chrDeviceDriver/llseekDev.c	/^loff_t llseekDev(struct file *filep, loff_t x, int count)$/;"	f
+llseekDev	llseekDev.c	/^loff_t llseekDev(struct file *filep, loff_t offset, int origin)$/;"	f
+main	application/myApp.c	/^int main()$/;"	f
+main	chrDeviceDriver/application/myApp.c	/^int main()$/;"	f
+mainMenu	application/mainMenu.c	/^int mainMenu()$/;"	f
+mainMenu	chrDeviceDriver/application/mainMenu.c	/^int mainMenu()$/;"	f
+majorno	chrDeviceDriver/init.c	/^int majorno =   MAJORNO;$/;"	v
+majorno	init.c	/^int majorno =   MAJORNO;$/;"	v
+minorno	chrDeviceDriver/init.c	/^int minorno =   0;$/;"	v
+minorno	init.c	/^int minorno =   0;$/;"	v
+myChrDev-objs	Makefile	/^myChrDev-objs := init.o clean.o openDev.o releaseDev.o readDev.o writeDev.o llseekDev.o trimDev.o$/;"	m
+myChrDev-objs	chrDeviceDriver/Makefile	/^myChrDev-objs := init.o clean.o openDev.o releaseDev.o readDev.o writeDev.o llseekDev.o trimDev.o$/;"	m
+myDev	chrDeviceDriver/decleration.h	/^struct myDev {$/;"	s
+myDev	decleration.h	/^struct myDev {$/;"	s
+myDevices	chrDeviceDriver/init.c	/^struct myDev *myDevices;        \/* allocated in scull_init_module *\/$/;"	v	typeref:struct:myDev
+myDevices	init.c	/^struct myDev *myDevices;        \/* allocated in scull_init_module *\/$/;"	v	typeref:struct:myDev
+myQset	chrDeviceDriver/decleration.h	/^struct myQset {$/;"	s
+myQset	decleration.h	/^struct myQset {$/;"	s
+next	chrDeviceDriver/decleration.h	/^   struct myQset *next;$/;"	m	struct:myQset	typeref:struct:myQset::myQset
+next	decleration.h	/^   struct myQset *next;$/;"	m	struct:myQset	typeref:struct:myQset::myQset
+no_of_qSet	init.c	/^int no_of_qSet = NUM_QSET;$/;"	v
+no_of_quantum	init.c	/^int no_of_quantum = NUM_QUANTUM;$/;"	v
+no_of_registers	chrDeviceDriver/init.c	/^int no_of_registers = NUM_REGISTRES;$/;"	v
+no_of_registers	init.c	/^int no_of_registers = NUM_REGISTRES;$/;"	v
+obj-m	Makefile	/^	obj-m := myChrDev.o$/;"	m
+obj-m	chrDeviceDriver/Makefile	/^	obj-m := myChrDev.o$/;"	m
+openDev	chrDeviceDriver/openDev.c	/^int openDev(struct inode *inodep, struct file *filep)$/;"	f
+openDev	openDev.c	/^int openDev(struct inode *inodep, struct file *filep)$/;"	f
+printQunatumData	writeDev.c	/^int printQunatumData(struct myQset *qs, int lsize)$/;"	f
+printQunatumData1	readDev.c	/^int printQunatumData1(struct myQset *qs, int noi)$/;"	f
+qset	chrDeviceDriver/decleration.h	/^   int qset;                 \/* the current array size *\/$/;"	m	struct:myDev
+qset	decleration.h	/^   int qset;                 \/* the current array size *\/$/;"	m	struct:myDev
+quantum	chrDeviceDriver/decleration.h	/^   int quantum;              \/* the current quantum size *\/$/;"	m	struct:myDev
+quantum	decleration.h	/^   int quantum;              \/* the current quantum size *\/$/;"	m	struct:myDev
+readDev	chrDeviceDriver/readDev.c	/^ssize_t readDev(struct file *filep, char __user *buff, size_t count, loff_t *f_pos)$/;"	f
+readDev	readDev.c	/^ssize_t readDev(struct file *filep, char __user *buff, size_t dataCount, loff_t *loff)$/;"	f
+releaseDev	chrDeviceDriver/releaseDev.c	/^int releaseDev(struct inode *inodep, struct file *filep)$/;"	f
+releaseDev	releaseDev.c	/^int releaseDev(struct inode *inodep, struct file *filep)$/;"	f
+sem	chrDeviceDriver/decleration.h	/^   struct semaphore sem;     \/* mutual exclusion semaphore     *\/$/;"	m	struct:myDev	typeref:struct:myDev::semaphore
+sem	decleration.h	/^   struct semaphore sem;     \/* mutual exclusion semaphore     *\/$/;"	m	struct:myDev	typeref:struct:myDev::semaphore
+size	chrDeviceDriver/decleration.h	/^   unsigned long size;       \/* amount of data stored here *\/$/;"	m	struct:myDev
+size	decleration.h	/^   unsigned long size;       \/* amount of data stored here *\/$/;"	m	struct:myDev
+size_of_registers	chrDeviceDriver/init.c	/^int size_of_registers = SIZ_REGISTRES;$/;"	v
+size_of_registers	init.c	/^int size_of_registers = SIZ_REGISTRES;$/;"	v
+trimDev	chrDeviceDriver/trimDev.c	/^int trimDev(struct myDev *myDevices)$/;"	f
+trimDev	trimDev.c	/^int trimDev(struct myDev *ldev)$/;"	f
+writeAppCall	application/writeAppCall.c	/^int writeAppCall(int fd)$/;"	f
+writeAppCall	chrDeviceDriver/application/writeAppCall.c	/^int writeAppCall(int fd)$/;"	f
+writeDev	chrDeviceDriver/writeDev.c	/^ssize_t writeDev(struct file *filep, const char __user *buff, size_t count, loff_t *f_pos)$/;"	f
+writeDev	writeDev.c	/^ssize_t writeDev(struct file *filep, const char __user *buff, size_t dataCount, loff_t *f_pos)$/;"	f

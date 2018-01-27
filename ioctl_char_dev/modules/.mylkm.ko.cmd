@@ -1,0 +1,1 @@
+cmd_/home/emblogic/kartik/ioctl_char_dev/mylkm.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emblogic/kartik/ioctl_char_dev/mylkm.ko /home/emblogic/kartik/ioctl_char_dev/mylkm.o /home/emblogic/kartik/ioctl_char_dev/mylkm.mod.o

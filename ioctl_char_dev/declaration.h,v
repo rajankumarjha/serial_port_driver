@@ -1,0 +1,349 @@
+head	1.21;
+access;
+symbols;
+locks
+	root:1.21; strict;
+comment	@ * @;
+
+
+1.21
+date	2017.12.22.09.36.04;	author kartikgupta;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.12.22.09.33.15;	author kartikgupta;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.12.22.07.48.12;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.12.22.07.44.43;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.12.22.07.44.17;	author kartikgupta;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.12.22.07.40.57;	author kartikgupta;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.12.22.07.21.15;	author kartikgupta;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.12.15.20.49.01;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.12.03.16.27.41;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.11.25.11.39.36;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.11.24.10.13.57;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.11.24.10.11.43;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.11.19.09.17.20;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.11.17.04.08.26;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.11.09.10.18.08;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.11.08.17.16.59;	author root;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.11.01.16.08.13;	author root;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.11.01.15.47.42;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.10.14.05.55.52;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.10.14.05.42.36;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.10.14.05.33.28;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@module init and exit function are declared
+myModule func is declared
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@int myModule(void);
+
+MODULE_LICENSE("GPL");
+
+int devOpen(struct inode *, struct file*);
+int devRelease(struct inode *, struct file*);
+ssize_t devWrite(struct file *, const char __user *,size_t , loff_t *);
+Qset* createScull(int,int);
+ssize_t devRead(struct file *, char __user *,size_t , loff_t *);
+loff_t devLlseek(struct file *,loff_t,int);
+long devIoctl(struct file *, unsigned int, unsigned long);
+
+//int (*tmrfp)(unsigned long);
+void timerFunc(unsigned long);
+ 
+int devTrim(Dev*);
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d13 2
+a14 2
+int (*tmrfp)(unsigned long);
+int timerFunc(unsigned long);
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d13 1
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@a13 1
+function=timerFunc;
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+//function=timerFunc;
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a13 1
+void timerFunc(unsigned long);
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+function=timerFunc;
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d12 3
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d11 2
+a12 1
+
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d8 1
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+//loff_t devLlseek(struct file *,loff_t,int);
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+loff_t devLlseek(struct file *,loff_t,int);
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d9 1
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d8 1
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@a0 1
+//static int __init kernel_init(void);
+a1 1
+//static void __exit kernel_exit(void);
+d6 1
+d8 1
+a8 1
+int devRelease(struct inode *, struct file*);
+@
+
+
+1.6
+log
+@devTrim declared
+@
+text
+@d8 1
+@
+
+
+1.5
+log
+@device opr func declared
+@
+text
+@d9 1
+@
+
+
+1.4
+log
+@module license macro put in it
+@
+text
+@d6 3
+@
+
+
+1.3
+log
+@kernel_init is commented
+@
+text
+@d4 2
+@
+
+
+1.2
+log
+@kernel_exit fun commented
+@
+text
+@d1 1
+a1 1
+static int __init kernel_init(void);
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d3 1
+a3 1
+static void __exit kernel_exit(void);
+@

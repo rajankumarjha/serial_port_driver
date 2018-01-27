@@ -1,0 +1,1 @@
+cmd_/home/emblogic/kartik/serial_port_test_driver/mylkm.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emblogic/kartik/serial_port_test_driver/mylkm.ko /home/emblogic/kartik/serial_port_test_driver/mylkm.o /home/emblogic/kartik/serial_port_test_driver/mylkm.mod.o

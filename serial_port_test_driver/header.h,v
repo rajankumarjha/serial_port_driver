@@ -1,0 +1,844 @@
+head	1.44;
+access;
+symbols;
+locks
+	emblogic:1.44; strict;
+comment	@ * @;
+
+
+1.44
+date	2018.01.11.11.12.09;	author emblogic;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2018.01.11.10.14.50;	author emblogic;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2018.01.06.11.43.00;	author emblogic;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2018.01.06.07.31.43;	author emblogic;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2018.01.06.07.26.23;	author emblogic;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2018.01.06.07.24.42;	author emblogic;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2018.01.06.07.23.34;	author emblogic;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2018.01.06.04.06.52;	author emblogic;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2017.12.23.10.02.17;	author emblogic;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2017.12.22.07.38.21;	author kartikgupta;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2017.12.22.07.21.17;	author kartikgupta;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2017.12.21.09.14.28;	author kartikgupta;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2017.12.21.08.09.45;	author kartikgupta;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2017.12.18.21.08.40;	author kartikgupta;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2017.12.15.20.49.08;	author kartikgupta;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2017.12.07.05.55.38;	author kartikgupta;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2017.12.03.16.48.50;	author kartikgupta;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2017.11.25.12.44.35;	author kartikgupta;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2017.11.24.07.25.45;	author kartikgupta;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2017.11.17.04.11.52;	author kartikgupta;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.11.17.04.08.30;	author kartikgupta;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2017.11.16.07.50.19;	author kartikgupta;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.11.12.03.07.22;	author root;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.11.10.09.38.30;	author kartikgupta;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.11.10.04.03.24;	author kartikgupta;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.11.09.17.27.58;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.11.09.17.02.52;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.11.08.17.17.08;	author root;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.10.29.04.50.25;	author root;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.10.29.04.25.26;	author root;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.10.27.23.57.33;	author root;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.10.27.23.43.05;	author root;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.10.26.12.34.32;	author root;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.10.26.11.13.23;	author root;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.10.26.07.59.33;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.10.26.07.06.40;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.10.26.06.49.52;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.10.26.06.45.35;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.10.26.04.09.10;	author kartikgupta;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.10.15.05.54.32;	author kartikgupta;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.10.14.07.01.06;	author kartikgupta;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.10.14.05.59.15;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.10.14.05.34.33;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.10.13.23.05.28;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@contain all header files
+included init.h and modules.h
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@#include<linux/init.h>         
+#include<linux/module.h>                 
+#include<linux/kernel.h>                
+#include<linux/fs.h>                     
+#include<linux/slab.h>                  //kmalloc
+#include<linux/cdev.h>                  
+#include<linux/moduleparam.h>          //accept module parameters during insmod                 
+#include<linux/uaccess.h>
+#include<linux/semaphore.h>
+#include<asm-generic/ioctl.h>         //include/uapi/asm-generic/ioctl.h
+#include<linux/sched.h>
+#include<linux/capability.h>
+#include<linux/jiffies.h>
+#include<linux/time.h>
+#include<asm/msr.h>                  //machine specific registers
+#include<asm/io.h>                  //machine specific registers
+#include<linux/timer.h>              
+#include<linux/ioport.h>       // for request_resgion() and check_region() and relesae_region()       
+#include<linux/bitops.h>
+#include<linux/delay.h>
+
+#define DEVNAME "NG_KG_CHAR_DRIVER"
+
+
+#ifndef DEBUG 
+#define DEBUG
+#endif
+
+
+#ifndef MAJORNO
+#define MAJORNO 0
+#endif
+
+#ifndef MINORNO
+#define MINORNO 0
+#endif
+
+#ifndef NOD
+#define NOD 1
+#endif
+
+#ifndef REGSIZE 
+#define REGSIZE 1
+#endif
+
+#ifndef REGNO 
+#define REGNO 8
+#endif
+
+#ifndef DEVSIZE 
+#define DEVSIZE 128
+#endif
+
+#ifndef DATASIZE 
+#define DATASIZE 0
+#endif
+
+#ifndef PORTADDR 
+#define PORTADDR 0x378
+#endif
+
+extern int majorno,minorno,nod,register_no,register_size,data_size,device_size;
+extern dev_t devno,devid;
+extern unsigned long tvar1,tvar2;
+
+typedef struct Qset
+{
+   struct Qset *next;
+   void **data;
+
+}Qset;
+
+/*struct timer_list
+{
+	struct hlist_node       entry;
+        unsigned long           expires;
+        void                    (*function)(unsigned long);
+	unsigned long           data;
+	u32                     flags;
+	int                     slack;
+    #ifdef CONFIG_TIMER_STATS
+        int                     start_pid;
+	void                    *start_site;
+	char                    start_comm[16];
+	#endif
+	#ifdef CONFIG_LOCKDEP
+	struct lockdep_map      lockdep_map;
+	#endif
+
+   
+};*/
+
+typedef struct Dev
+{
+    struct cdev c_dev;
+    int register_no;               //size of qset array          
+    int register_size;            //quantum size
+    int data_size;
+    int device_size;
+    struct Qset *sqset;
+    struct semaphore sem;
+    struct timer_list tmr;
+
+}Dev;
+
+extern Dev *D_dev; 
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d51 1
+a51 1
+#define DEVSIZE 24
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d47 1
+a47 1
+#define REGNO 3
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d20 1
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+#include<asm-generic/bitops/non-atomic.h>
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+#include<asm/non-atomic.h>
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+#include<asm-generic/non-atomic.h>
+@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@d19 1
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d16 1
+d18 1
+a18 1
+#include<linux/ioport.h>              
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d17 1
+d21 2
+a22 1
+#ifndef DEBUG                         //printk statements
+d26 1
+d40 1
+a40 1
+#define REGSIZE 4
+d44 1
+a44 1
+#define REGNO 8
+d48 1
+a48 1
+#define DEVSIZE 128
+d53 4
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d63 1
+a63 1
+struct timer_list
+d81 1
+a81 1
+};
+d93 1
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d16 1
+d63 20
+d92 1
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d14 2
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d13 1
+d51 1
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d11 2
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d10 1
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d9 1
+d63 1
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d57 1
+a57 1
+    int register_no;              //size of qset array          
+a61 1
+
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@a10 1
+//#define NUL ((void*)0) 
+d12 1
+a12 1
+#ifndef DEBUG
+@
+
+
+1.25
+log
+@uaccess header file added
+@
+text
+@d42 1
+a42 1
+#define DATASIZE 32
+a61 1
+    //struct Qset sqset;
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d8 1
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d10 1
+d51 1
+@
+
+
+1.22
+log
+@just to test
+@
+text
+@d59 2
+a60 1
+    struct Qset sqset;
+@
+
+
+1.21
+log
+@struct Qset declared
+@
+text
+@d60 1
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d58 1
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d40 1
+a40 1
+#define DATASIZE 16
+d43 1
+a43 1
+extern int majorno,minorno,nod;
+d55 3
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d46 1
+a46 1
+struct Qset
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+#define DEVNAME "KG_CHAR_DRIVER2"
+d46 6
+d55 1
+a55 4
+    int register_size;
+    int register_no;
+    int device_size;
+    int data_size;
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+#define REGSIZE 8
+d32 1
+a32 1
+#define REGNO 4
+d36 1
+a36 1
+#define DEVSIZE 32
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+#define DEVNAME "KG_CHAR_DRIVER"
+@
+
+
+1.14
+log
+@nd replaced with 100
+@
+text
+@d55 1
+a55 1
+extern Dev *D_dev[100]; 
+@
+
+
+1.13
+log
+@array of pointers to struct Dev for nod devices
+@
+text
+@d55 1
+a55 1
+extern Dev *D_dev[nod]; 
+@
+
+
+1.12
+log
+@device parameters introduced in struct Dev
+moduleparam.h defined
+@
+text
+@d55 1
+a55 1
+extern Dev *D_dev; 
+@
+
+
+1.11
+log
+@just check the rcs -u to unlock the revision
+@
+text
+@d7 1
+d27 16
+d49 4
+@
+
+
+1.10
+log
+@extern int devid used
+@
+text
+@d5 2
+a6 2
+#include<linux/slab.h>                  //for kmalloc
+#include<linux/cdev.h>                
+@
+
+
+1.9
+log
+@*dev replaced with *D_dev
+@
+text
+@d27 1
+a27 1
+extern dev_t devno;
+@
+
+
+1.8
+log
+@linux/cdev.h added
+@
+text
+@d34 1
+a34 1
+extern Dev *dev; 
+@
+
+
+1.7
+log
+@struct Dev is declared along with its extern struct ptr dev
+header file linux/slab.h added
+@
+text
+@d6 1
+@
+
+
+1.6
+log
+@debug macro is defined
+@
+text
+@d1 5
+a5 4
+#include<linux/init.h>
+#include<linux/module.h>
+#include<linux/kernel.h>
+#include<linux/fs.h>
+d25 1
+a25 1
+extern int majorno,minorno;
+d27 7
+@
+
+
+1.5
+log
+@kernel.h included
+@
+text
+@d8 4
+@
+
+
+1.4
+log
+@dev_t devno is declared
+macro for minor no and no. of devices defined
+@
+text
+@d3 1
+@
+
+
+1.3
+log
+@foper.h is removed
+@
+text
+@d11 8
+d20 1
+@
+
+
+1.2
+log
+@linux/fs header file is defined
+macro for device name and major no is defined 
+extern int major no is declared
+@
+text
+@a3 1
+#include "foper.h" 
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d3 10
+@

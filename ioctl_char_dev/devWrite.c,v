@@ -1,0 +1,2292 @@
+head	1.104;
+access;
+symbols;
+locks
+	root:1.104; strict;
+comment	@ * @;
+
+
+1.104
+date	2018.01.09.06.07.08;	author emblogic;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2018.01.07.09.09.29;	author emblogic;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2018.01.06.12.51.20;	author emblogic;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2018.01.06.12.37.44;	author emblogic;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2018.01.06.11.48.50;	author emblogic;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2018.01.06.11.48.21;	author emblogic;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2018.01.06.11.43.03;	author emblogic;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2018.01.06.11.28.29;	author emblogic;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2018.01.06.11.27.54;	author emblogic;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2018.01.06.11.24.55;	author emblogic;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2018.01.06.11.03.21;	author emblogic;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2018.01.06.11.01.45;	author emblogic;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2018.01.06.10.59.09;	author emblogic;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2018.01.06.10.33.16;	author emblogic;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2018.01.06.09.54.18;	author emblogic;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2018.01.06.07.33.31;	author emblogic;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2018.01.06.07.23.38;	author emblogic;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2018.01.06.04.06.55;	author emblogic;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2017.12.21.09.54.18;	author kartikgupta;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2017.12.21.09.40.10;	author kartikgupta;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2017.12.21.09.14.29;	author kartikgupta;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2017.12.21.08.24.34;	author kartikgupta;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2017.12.21.08.16.17;	author kartikgupta;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2017.12.21.08.09.48;	author kartikgupta;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2017.12.21.07.03.46;	author kartikgupta;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2017.12.15.20.49.18;	author kartikgupta;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2017.12.07.06.27.48;	author kartikgupta;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2017.12.07.06.24.44;	author kartikgupta;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2017.12.07.06.08.35;	author kartikgupta;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2017.12.07.05.55.49;	author kartikgupta;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2017.12.04.09.56.15;	author kartikgupta;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2017.12.04.08.17.35;	author kartikgupta;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2017.12.03.16.59.53;	author kartikgupta;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2017.12.03.16.27.46;	author kartikgupta;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2017.11.30.08.17.12;	author kartikgupta;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2017.11.25.12.25.08;	author kartikgupta;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2017.11.25.12.21.33;	author kartikgupta;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2017.11.25.11.29.44;	author kartikgupta;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2017.11.25.11.27.27;	author kartikgupta;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2017.11.25.11.21.22;	author kartikgupta;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2017.11.25.10.55.09;	author kartikgupta;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2017.11.25.10.53.47;	author kartikgupta;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2017.11.25.10.49.15;	author kartikgupta;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2017.11.24.10.12.19;	author kartikgupta;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2017.11.24.10.11.47;	author kartikgupta;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2017.11.24.09.16.31;	author kartikgupta;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2017.11.24.07.25.48;	author kartikgupta;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2017.11.24.05.37.13;	author kartikgupta;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2017.11.22.23.37.58;	author kartikgupta;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2017.11.22.00.22.13;	author kartikgupta;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2017.11.22.00.16.04;	author kartikgupta;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2017.11.22.00.08.30;	author kartikgupta;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2017.11.21.23.50.33;	author kartikgupta;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2017.11.21.23.29.23;	author kartikgupta;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2017.11.20.22.54.12;	author kartikgupta;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2017.11.20.22.31.34;	author kartikgupta;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2017.11.20.22.16.37;	author kartikgupta;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2017.11.20.22.13.26;	author kartikgupta;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2017.11.20.22.03.48;	author kartikgupta;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2017.11.20.00.45.26;	author kartikgupta;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2017.11.20.00.44.52;	author kartikgupta;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2017.11.20.00.44.08;	author kartikgupta;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2017.11.20.00.15.38;	author kartikgupta;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2017.11.20.00.14.02;	author kartikgupta;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2017.11.20.00.08.38;	author kartikgupta;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2017.11.20.00.07.05;	author kartikgupta;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2017.11.20.00.02.14;	author kartikgupta;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2017.11.19.23.59.40;	author kartikgupta;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2017.11.19.23.52.54;	author kartikgupta;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2017.11.19.23.52.11;	author kartikgupta;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2017.11.19.23.49.04;	author kartikgupta;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2017.11.19.23.43.37;	author kartikgupta;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2017.11.19.23.35.23;	author kartikgupta;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2017.11.19.23.32.57;	author kartikgupta;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2017.11.19.23.30.17;	author kartikgupta;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2017.11.19.09.17.24;	author kartikgupta;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2017.11.17.12.59.03;	author kartikgupta;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2017.11.17.12.57.34;	author kartikgupta;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2017.11.17.12.36.29;	author kartikgupta;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2017.11.17.12.32.55;	author kartikgupta;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.11.17.11.36.52;	author kartikgupta;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2017.11.17.10.54.13;	author kartikgupta;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.11.17.10.50.45;	author kartikgupta;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.11.17.10.40.00;	author kartikgupta;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.11.17.04.14.07;	author kartikgupta;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.11.17.04.08.43;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.11.16.07.58.31;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.11.16.07.50.22;	author kartikgupta;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.11.12.10.13.11;	author root;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.11.12.10.11.37;	author root;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.11.10.10.03.01;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.11.10.10.01.24;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.11.10.09.54.11;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.11.10.09.42.44;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.11.10.09.39.46;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.11.10.09.38.45;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.11.10.04.03.29;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.11.09.17.49.36;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.11.09.17.42.59;	author kartikgupta;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.11.09.17.31.53;	author kartikgupta;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.11.09.17.28.00;	author kartikgupta;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.11.09.17.04.04;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.11.09.17.02.55;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.11.09.10.18.37;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.104
+log
+@*** empty log message ***
+@
+text
+@#include"header.h"
+#include"declaration.h"
+
+ssize_t devWrite(struct file *filp,const char __user *buff,size_t buffsz,loff_t *loffptr)
+{
+    Dev *ldev=NULL;
+    Qset *lsqset=NULL;
+    int noi,noq,i=0,ret=0,noctw=0,nocsw=0,ret2;
+    unsigned long j1,j2,tsclli,tsclle;
+    unsigned volatile long addrbit;
+    unsigned char fetch_set,fetch_clear;
+ 
+    j1=jiffies;
+    tvar1=jiffies;
+   
+    //rdtsc(tschi,tscli);
+    rdtscll(tsclli);
+    
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :Begin\n",__func__);
+    #endif
+    
+    #ifdef DEBUG
+    printk(KERN_INFO "buffer limit: %lu bytes\n",buffsz);
+    #endif
+    
+     ldev=filp->private_data;
+     #ifdef DEBUG
+     printk(KERN_INFO "ldev address is %p\n",ldev);
+     #endif
+
+      if(buffsz>device_size)
+      {
+         #ifdef DEBUG
+         printk(KERN_INFO "partial write will occur");
+         #endif
+         buffsz=device_size; 
+      }
+    
+    noi=buffsz/(register_no*register_size);
+    if(buffsz%(register_no*register_size)>0)
+    noi++;
+    
+    noq=buffsz/(register_size);
+    if((buffsz%register_size)>0)
+    noq++;
+
+    #ifdef DEBUG
+    printk(KERN_INFO "noi: %d \n",noi);
+    printk(KERN_INFO "noq: %d \n",noq);
+    #endif
+   
+    //if(down_interruptible(&ldev->sem))  
+      // return -ERESTARTSYS;
+  
+    lsqset=createScull(noi,noq);      
+    ldev->sqset=lsqset; 
+          
+      while(buffsz)
+       {
+            if(ret==0)
+            {   
+             if(buffsz>register_size)
+             noctw=register_size;
+             else
+             noctw=buffsz;
+            }
+ 
+            if(i==register_no)
+             {
+               ldev->sqset=ldev->sqset->next;
+               i=0;
+             }
+
+             ret=copy_from_user(ldev->sqset->data[i],buff+nocsw,noctw);
+             /*if(ret>0)                                                    //will work if ret=4   
+             {
+                i--;
+                noctw=ret;
+             }*/
+             nocsw=nocsw+(noctw-ret);   
+              
+             #ifdef DEBUG
+             printk(KERN_INFO "i:%d noctw: %d  nocsw: %d\n",i,noctw,nocsw);
+             #endif
+             
+              buffsz=buffsz-(noctw-ret);
+              *loffptr=nocsw;
+              data_size=*loffptr;
+              filp->f_pos=nocsw;
+              i++;
+       }
+          
+          
+          addrbit=inb(PORTADDR+2);  
+          ret2=test_bit(0,&addrbit);   //strobe_bit
+	  #ifdef DEBUG
+          printk(KERN_INFO "strobe bit value at 0x37A is %d",ret2);
+          #endif
+          	  
+	 /* test_and_set_bit(0,&addrbit);   //strobe bit becomes 1      
+	  fetch_set=(unsigned char)addrbit;
+      
+	  outb(fetch_set,PORTADDR+2); 
+          
+	  test_and_clear_bit(0,&addrbit);
+	  fetch_clear=(unsigned char)addrbit;
+	  
+	  outb(*(char*)(ldev->sqset->data[0]),PORTADDR);	
+	  
+	  outb(fetch_clear,PORTADDR+2); 
+	  mdelay(1000);                   //1 sec low pulse
+ 	  outb(fetch_set,PORTADDR+2);*/ 
+          	  
+
+
+	  addrbit=inb(PORTADDR+1);  
+          ret2=test_bit(7,&addrbit); //busy bit 
+	  #ifdef DEBUG
+          printk(KERN_INFO "busy bit value at 0x379 is %d",ret2);
+          #endif
+       
+       ldev->data_size=nocsw;
+       ldev->sqset=lsqset;
+       
+      //up(&ldev->sem);        
+          
+    #ifdef DEBUG
+    printk(KERN_INFO "filepos f_pos at: %lld\n",filp->f_pos);
+    printk(KERN_INFO "filepos loff  at: %lld\n",*(loffptr));
+    printk(KERN_INFO "data_size on device is: %d\n",data_size);
+    #endif
+    
+    j2=jiffies;
+    #ifdef DEBUG
+    printk(KERN_INFO "j2->%lu and j1->%lu\n",j2,j1);
+    #endif
+
+    //rdtsc(tsche,tscle);
+    rdtscll(tsclle);
+    #ifdef DEBUG
+    printk(KERN_INFO "machine cycles used in fun is %lu\n",tsclle-tsclli);
+    #endif
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End\n",__func__);
+    #endif
+    return nocsw;
+}
+
+@
+
+
+1.103
+log
+@*** empty log message ***
+@
+text
+@a115 5
+	  //outb(&addrbit,)
+	  /*ret2=test_bit(0,&addrbit);
+	  #ifdef DEBUG
+          printk(KERN_INFO "strobe bit value at 0x37A is %d",ret2);
+          #endif*/
+@
+
+
+1.102
+log
+@*** empty log message ***
+@
+text
+@d101 1
+a101 1
+	  test_and_set_bit(0,&addrbit);   //strobe bit becomes 1      
+d113 1
+a113 1
+ 	  outb(fetch_set,PORTADDR+2); 
+@
+
+
+1.101
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+	  mdelay(1000);                   //10 msec low pulse
+@
+
+
+1.100
+log
+@*** empty log message ***
+@
+text
+@d112 3
+a114 3
+	  mdelay(10);                   //10 msec low pulse
+	  outb(fetch_set,PORTADDR+2); 
+	  
+@
+
+
+1.99
+log
+@*** empty log message ***
+@
+text
+@d109 1
+a109 1
+	  outb(*(ldev->sqset->data[0]),PORTADDR);	
+@
+
+
+1.98
+log
+@*** empty log message ***
+@
+text
+@d109 1
+a109 1
+	  outb((ldev->sqset->data[0]),PORTADDR);	
+@
+
+
+1.97
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+    unsigned char fetch;
+a94 1
+	//outb((char *)(ldev->sqset->data[0]) , PORTADDR);	
+d101 4
+a104 1
+	  test_and_set_bit(0,&addrbit);   //strobe bit becomes 1
+d106 9
+a114 3
+	  fetch=(unsigned char)addrbit;
+          
+	  outb(fetch,PORTADDR+2); 
+@
+
+
+1.96
+log
+@*** empty log message ***
+@
+text
+@d106 1
+a106 1
+	  outb((char*)fetch,PORTADDR+2); 
+@
+
+
+1.95
+log
+@*** empty log message ***
+@
+text
+@d106 1
+a106 1
+	  outb(fetch,PORTADDR); 
+@
+
+
+1.94
+log
+@*** empty log message ***
+@
+text
+@d11 2
+d93 1
+a93 1
+       
+d101 2
+d104 1
+a104 6
+          ret2=test_bit(0,(const unsigned volatile long)(PORTADDR+2));   //strobe_bit
+	  #ifdef DEBUG
+          printk(KERN_INFO "strobe bit value at 0x37A is %d",ret2);
+          #endif
+	  
+	  test_and_set_bit(0,&addrbit);   //strobe bit becomes 1
+d106 2
+d119 1
+a119 7
+          
+	  ret2=test_bit(7,(const unsigned volatile long)(PORTADDR+1)); //busy bit 
+	  #ifdef DEBUG
+          printk(KERN_INFO "busy bit value at 0x379 is %d",ret2);
+          #endif
+  
+          
+@
+
+
+1.93
+log
+@*** empty log message ***
+@
+text
+@d100 1
+a100 1
+          ret2=test_bit(0,(unsigned volatile long)(PORTADDR+2));   //strobe_bit
+d119 1
+a119 1
+	  ret2=test_bit(7,(unsigned volatile long)(PORTADDR+1)); //busy bit 
+@
+
+
+1.92
+log
+@*** empty log message ***
+@
+text
+@d100 1
+a100 1
+          ret2=test_bit(0,PORTADDR+2);   //strobe_bit
+d119 1
+a119 1
+	  ret2=test_bit(7,PORTADDR+1); //busy bit 
+@
+
+
+1.91
+log
+@*** empty log message ***
+@
+text
+@d100 6
+a105 1
+	  test_and_set_bit(0,&addrbit);
+d107 2
+a108 1
+	  ret2=test_bit(0,&addrbit);
+d111 1
+a111 1
+          #endif
+d115 5
+@
+
+
+1.90
+log
+@*** empty log message ***
+@
+text
+@d100 7
+@
+
+
+1.89
+log
+@*** empty log message ***
+@
+text
+@d95 10
+a104 5
+          ret2=test_bit(0,&addrbit);
+         
+	     #ifdef DEBUG
+             printk(KERN_INFO "bit value at 0x37A is %d",ret);
+             #endif
+@
+
+
+1.88
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+    int noi,noq,i=0,ret=0,noctw=0,nocsw=0,ret;
+d95 1
+a95 1
+          ret=test_bit(0,&addrbit);
+@
+
+
+1.87
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+    int noi,noq,i=0,ret=0,noctw=0,nocsw=0;
+d10 1
+a10 1
+    
+d51 2
+a52 2
+    if(down_interruptible(&ldev->sem))  
+       return -ERESTARTSYS;
+d92 10
+a101 3
+	outb(*(char *)(ldev->sqset->data[0]) , PORTADDR);	
+
+ 
+d105 1
+a105 1
+      up(&ldev->sem);        
+@
+
+
+1.86
+log
+@*** empty log message ***
+@
+text
+@d91 4
+a94 1
+        
+@
+
+
+1.85
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    unsigned long j1,j2,tscli,tschi,tsclli,tscle,tsche,tsclle;
+@
+
+
+1.84
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+    rdtsc(tschi,tscli);
+d108 1
+a108 1
+    rdtsc(tsche,tscle);
+@
+
+
+1.83
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    unsigned long j1,j2;
+d13 4
+a16 1
+
+d106 6
+@
+
+
+1.82
+log
+@*** empty log message ***
+@
+text
+@a103 7
+    
+    if(time_after(tvar2,tvar1))         //true when tvar1 comes after tvar2
+     {
+    	#ifdef DEBUG
+    	printk(KERN_INFO "tvar1 comes after tvar2\n");
+    	#endif
+     }
+@
+
+
+1.81
+log
+@*** empty log message ***
+@
+text
+@d105 1
+a105 1
+    if(time_after(tvar1,tvar2))         //true when tvar1 comes after tvar2
+@
+
+
+1.80
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+
+d12 1
+a100 1
+
+d105 7
+@
+
+
+1.79
+log
+@*** empty log message ***
+@
+text
+@d9 4
+a12 1
+    
+d98 7
+a104 1
+  
+@
+
+
+1.78
+log
+@*** empty log message ***
+@
+text
+@d43 1
+a43 1
+    
+@
+
+
+1.77
+log
+@*** empty log message ***
+@
+text
+@d80 1
+d87 1
+a87 1
+  
+@
+
+
+1.76
+log
+@*** empty log message ***
+@
+text
+@d92 1
+@
+
+
+1.75
+log
+@*** empty log message ***
+@
+text
+@a79 1
+              data_size=*loffptr;              
+d90 2
+a91 2
+    printk(KERN_INFO "file_pos at: %lld\n",filp->f_pos);
+    printk(KERN_INFO "file_pos at: %lld\n",*(loffptr));
+@
+
+
+1.74
+log
+@*** empty log message ***
+@
+text
+@d43 4
+a46 1
+   
+d86 3
+a88 1
+       ldev->sqset=lsqset;        
+@
+
+
+1.73
+log
+@*** empty log message ***
+@
+text
+@d64 1
+a64 1
+             if(ret>0)                                                    //will work if ret=4   
+d68 1
+a68 1
+             }
+d77 1
+a77 1
+              data_size=*loffptr;
+d81 2
+a82 1
+    
+@
+
+
+1.72
+log
+@*** empty log message ***
+@
+text
+@d64 1
+a64 1
+             if(ret>0)
+@
+
+
+1.71
+log
+@*** empty log message ***
+@
+text
+@d41 1
+a41 1
+    printk(KERN_INFO "noq: %d bytes\n",noq);
+d75 2
+a76 3
+
+             buffsz=buffsz-(noctw-ret);
+             *loffptr=nocsw;
+d79 1
+a79 1
+             i++;
+@
+
+
+1.70
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 2
+    Qset *tempqset=NULL;
+    int noi,noq,i=0,j,ret=0,count=0,noctw=0,nocsw=0;
+d30 1
+a30 1
+
+d44 2
+a45 72
+    // create scull 
+
+    for(i=0;i<noi;i++)
+     {
+          if(i==0)
+           {
+              lsqset=tempqset=(Qset*)kmalloc(sizeof(Qset),GFP_KERNEL);
+              if(!lsqset)
+               {
+    		#ifdef DEBUG
+    		printk(KERN_INFO "kmalloc:\n");
+    		#endif
+                goto ERR;
+               }
+            }
+          else
+           {
+              tempqset->next=(Qset*)kmalloc(sizeof(Qset),GFP_KERNEL);
+              if(!(tempqset->next))
+               {
+    		#ifdef DEBUG
+    		printk(KERN_INFO "kmalloc:\n");
+    		#endif
+                goto ERR;
+               } 
+            }
+
+              tempqset=tempqset->next;
+              if(i==noi-1) 
+              {
+                //tempqset->next=NULL;                       
+                tempqset->next=(void*)0;                       
+               }
+     }    
+              
+       tempqset=lsqset;
+
+      for(i=0;i<noi;i++)
+       {
+              tempqset->data=kmalloc(register_no*sizeof(char*),GFP_KERNEL); 
+              if(!(tempqset->data))
+               {
+    	        #ifdef DEBUG
+    		printk(KERN_INFO "kmalloc:\n");
+    		#endif
+                goto ERR;
+               }
+                 
+                 for(j=0;j<register_no;j++)
+                  {
+                        
+              		tempqset->data[j]=(char*)kmalloc(register_size*sizeof(char),GFP_KERNEL); 
+              		if(!(tempqset->data[j]))
+              		 {
+    	        	  #ifdef DEBUG
+    			  printk(KERN_INFO "kmalloc:\n");
+    		          #endif
+                          goto ERR;
+                         }
+                     count++;
+                     if(count==noq)
+                     break;
+                   }  
+
+               tempqset=tempqset->next;
+
+        }
+        
+         tempqset=lsqset;
+         i=0;
+         
+         ldev->sqset=lsqset; 
+a46 1
+
+a93 7
+
+   ERR:  
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End with error\n",__func__);
+    #endif
+    return -1;
+@
+
+
+1.69
+log
+@*** empty log message ***
+@
+text
+@d24 7
+a117 7
+      if(buffsz>device_size)
+      {
+         #ifdef DEBUG
+         printk(KERN_INFO "partial write will occur");
+         #endif
+         buffsz=device_size; 
+      }
+d150 1
+d155 1
+a155 3
+       ldev->sqset=lsqset; 
+       
+       data_size=*loffptr;
+@
+
+
+1.68
+log
+@*** empty log message ***
+@
+text
+@d166 1
+a166 1
+    return filp->f_pos;
+@
+
+
+1.67
+log
+@*** empty log message ***
+@
+text
+@d166 1
+a166 1
+    return nocsw;
+@
+
+
+1.66
+log
+@*** empty log message ***
+@
+text
+@d150 1
+a150 1
+             // filp->f_pos=nocsw;
+d159 1
+a159 1
+    //printk(KERN_INFO "file_pos at: %lld\n",filp->f_pos);
+d166 1
+a166 1
+    return *loffptr;
+@
+
+
+1.65
+log
+@*** empty log message ***
+@
+text
+@d150 1
+a150 1
+              filp->f_pos=nocsw;
+d159 1
+a159 1
+    printk(KERN_INFO "file_pos at: %lld\n",filp->f_pos);
+d166 1
+a166 1
+    return nocsw;
+@
+
+
+1.64
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+    ldev=filp->private_data;
+d22 1
+a22 1
+      #endif
+a159 3
+    #endif
+
+    #ifdef DEBUG
+@
+
+
+1.63
+log
+@*** empty log message ***
+@
+text
+@a133 3
+              #ifdef DEBUG
+              printk(KERN_INFO "ldev address is %x\n",ldev->sqset);
+              #endif
+@
+
+
+1.62
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 1
+     printk(KERN_INFO "ldev address is %x\n",(unsigned int)ldev);
+@
+
+
+1.61
+log
+@*** empty log message ***
+@
+text
+@d118 1
+d162 1
+a162 1
+    printk(KERN_INFO "file_pos at: %ld\n",(long)filp->f_pos);
+d166 1
+a166 1
+    printk(KERN_INFO "file_pos at: %ld\n",(*loffptr));
+@
+
+
+1.60
+log
+@*** empty log message ***
+@
+text
+@d152 1
+a152 1
+              filep->f_pos=nocsw;
+@
+
+
+1.59
+log
+@*** empty log message ***
+@
+text
+@d152 1
+@
+
+
+1.58
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    int noi,noq,i=0,j,ret,count=0,noctw=0,nocsw=0;
+d120 2
+d126 2
+a127 1
+             
+d138 5
+@
+
+
+1.57
+log
+@*** empty log message ***
+@
+text
+@d110 8
+a117 2
+        
+   
+d148 3
+a150 1
+
+@
+
+
+1.56
+log
+@*** empty log message ***
+@
+text
+@a44 3
+    		#ifdef DEBUG1
+    		printk(KERN_INFO "test1:\n");
+    		#endif
+a55 3
+    		#ifdef DEBUG2
+    		printk(KERN_INFO "test2:\n");
+    		#endif
+a69 3
+    		#ifdef DEBUG3
+    		printk(KERN_INFO "test3:\n");
+    		#endif
+a77 3
+    		#ifdef DEBUG4
+    		printk(KERN_INFO "test4:\n");
+    		#endif
+a89 3
+    			#ifdef DEBUG5
+    			printk(KERN_INFO "test5:\n");
+    			#endif
+a103 3
+     			#ifdef DEBUG6
+    			printk(KERN_INFO "test6:\n");
+    			#endif
+a136 3
+             #ifdef DEBUG7
+             printk(KERN_INFO "buffsz is: %lu\n",buffsz);
+             #endif
+a141 1
+       //filp->f_pos=nocsw;
+@
+
+
+1.55
+log
+@*** empty log message ***
+@
+text
+@d127 1
+a127 1
+       ldev->sqset=lsqset; 
+d129 1
+a129 3
+    #ifdef DEBUG
+    printk(KERN_INFO "file_pos at: %ld\n",(*loffptr));
+    #endif
+@
+
+
+1.54
+log
+@*** empty log message ***
+@
+text
+@d160 1
+a160 1
+             //*loffptr=nocsw;
+d165 1
+a165 1
+       filp->f_pos=nocsw;
+@
+
+
+1.53
+log
+@*** empty log message ***
+@
+text
+@d160 1
+a160 1
+             *loffptr=nocsw;
+d165 1
+a165 1
+       //filp->f_pos=nocsw;
+@
+
+
+1.52
+log
+@*** empty log message ***
+@
+text
+@d165 1
+a165 1
+       filp->f_pos=nocsw;
+@
+
+
+1.51
+log
+@*** empty log message ***
+@
+text
+@a160 1
+             //filp->f_pos=nocsw;
+d165 2
+a166 1
+       //*loffptr=nocsw;
+d170 1
+@
+
+
+1.50
+log
+@*** empty log message ***
+@
+text
+@d160 2
+a161 1
+             filp->f_pos=nocsw;
+d166 1
+a166 1
+       *loffptr=nocsw;
+@
+
+
+1.49
+log
+@*** empty log message ***
+@
+text
+@d128 1
+a128 1
+       
+d165 1
+a165 1
+       
+d169 1
+a169 1
+    #ifdef DEBUG5
+@
+
+
+1.48
+log
+@*** empty log message ***
+@
+text
+@d169 1
+a169 1
+    #ifdef DEBUG
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d164 2
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d144 3
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d20 4
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a4 1
+ssize_t devWrite(struct file *filp,const char __user *buff,size_t buffsz,loff_t *offptr)
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d126 1
+a126 1
+    printk(KERN_INFO "file_pos at: %ld\n",long(*loffptr));
+d161 1
+a161 1
+    printk(KERN_INFO "file_pos at: %ld\n",long(*loffptr));
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d125 3
+d159 3
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    int noi,noq,i=0,ret,count=0,noctw=0,nocsw=0;
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    int noi,noq,i=0,j,ret,count=0,lsize,noctw=0,nocsw=0;
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d41 1
+a41 1
+    		#ifdef DEBUG
+d55 1
+a55 1
+    		#ifdef DEBUG
+d72 1
+a72 1
+    		#ifdef DEBUG
+d83 1
+a83 1
+    		#ifdef DEBUG
+d98 1
+a98 1
+    			#ifdef DEBUG
+d115 1
+a115 1
+     			#ifdef DEBUG
+d147 1
+a147 1
+             #ifdef DEBUG
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d132 6
+a144 5
+            if(i==register_no-1)
+             {
+               ldev->sqset=ldev->sqset->next;
+               i=0;
+             }
+@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@d132 1
+a132 1
+             ret=copy_from_user(ldev->sqset->data[i++],buff+nocsw,noctw);
+d150 1
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@a132 5
+             if(i==register_no-1)
+             {
+               ldev->sqset=ldev->sqset->next;
+               i=0;
+             }
+d138 6
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d146 1
+a146 1
+             printk(KERN_INFO "buffsz is: %d\n",buffsz);
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d145 3
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d144 1
+a144 1
+             buffsz-=noctw;
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d130 1
+a130 1
+             noctw=lsize;
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d41 1
+a41 1
+    		#ifdef DEBUG1
+d55 1
+a55 1
+    		#ifdef DEBUG2
+d72 1
+a72 1
+    		#ifdef DEBUG3
+d83 1
+a83 1
+    		#ifdef DEBUG4
+d98 1
+a98 1
+    			#ifdef DEBUG5
+d115 1
+a115 1
+     			#ifdef DEBUG6
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d70 2
+a71 2
+                tempqset->next=NULL;                       
+                //tempqset->next=(void*)0;                       
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d16 1
+a16 2
+    printk(KERN_INFO "buffer data size: %lu  bytes\n",strlen(buff));
+    printk(KERN_INFO "buffer memory limit: %lu bytes\n",buffsz);
+a19 1
+    lsize=strlen(buff);
+d125 1
+a125 1
+      while(lsize)
+d127 1
+a127 1
+             if(lsize>register_size)
+d144 1
+a144 1
+             lsize=lsize-noctw;
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d128 1
+a128 1
+      {
+d134 1
+a134 1
+             ret=copy_from_user(ldev->sqset->data[i++],buff,noctw);
+d142 3
+a144 3
+            #ifdef DEBUG
+            printk(KERN_INFO "i:%d noctw: %d  nocsw: %d\n",i,noctw,nocsw);
+            #endif
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d151 1
+a151 1
+    printk(KERN_INFO "file_pos at: %ld\n",filp->f_pos);
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d147 6
+a152 1
+      }
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d72 2
+a73 1
+                tempqset->next=(void*)0;                       
+@
+
+
+1.24
+log
+@i initialized to 0
+@
+text
+@d134 1
+a134 1
+             if(i==register_size-1)
+@
+
+
+1.23
+log
+@copy from user used to write no. of bytes
+@
+text
+@d122 1
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    int noi,noq,i,j,ret,count=0,lsize,noctw=0,nocsw=0;
+a131 1
+             i=0;
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d72 1
+a72 1
+                tempqset->next=NULL;                       
+d125 1
+a125 1
+     /* while(lsize)
+d145 2
+a146 2
+             lsize=lsize-nocsw;
+      }*/
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d125 1
+a125 1
+      while(lsize)
+d146 1
+a146 1
+      }
+d153 1
+a153 1
+  ERR:  
+@
+
+
+1.19
+log
+@copy from user macro used to copy data from user buffer
+@
+text
+@d9 1
+a9 1
+    int noi,noq,i,j,count=0,lsize,noctw=0,nocsw=0;
+d151 1
+a151 1
+    return 0;
+d158 1
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    int noi,noq,i,j,count=0;
+d21 1
+d35 2
+d51 1
+a51 1
+                return -1;
+a52 1
+              //lsqset=(Qset*)memset(lsqset,0,sizeof(Qset)); 
+d65 1
+a65 1
+                return -1;
+a66 1
+              //tempqset->next=(Qset*)memset(tempqset->next,0,sizeof(Qset)); 
+d71 2
+a72 1
+              {tempqset->next=NULL;                       
+d92 1
+a92 1
+                return -1;
+d107 1
+a107 1
+                          return -1;
+d113 1
+d115 2
+a116 1
+    			#ifdef DEBUG6
+d123 24
+a146 1
+       ldev->sqset=lsqset; //copy_from_user()    
+a150 1
+   
+d152 6
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d119 1
+a119 1
+       ldev->sqset=lsqset //copy_from_user()    
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@a14 1
+     
+a16 2
+    #endif
+    #ifdef DEBUG
+a31 2
+    #endif
+    #ifdef DEBUG
+d40 1
+a40 1
+    		#ifdef DEBUG
+d55 1
+a55 1
+    		#ifdef DEBUG
+d71 1
+a71 1
+    		#ifdef DEBUG
+d82 1
+a82 1
+    		#ifdef DEBUG
+d97 1
+a97 1
+    			#ifdef DEBUG
+d112 1
+a112 1
+    			#ifdef DEBUG
+d118 3
+a120 1
+               
+@
+
+
+1.15
+log
+@printk test added
+@
+text
+@d78 2
+a79 1
+    		#endif}
+d89 1
+a89 1
+    		#endif}
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d45 3
+d60 3
+d75 4
+a78 1
+              tempqset->next=NULL;                       
+d86 3
+d101 3
+d116 3
+@
+
+
+1.13
+log
+@noi and noq are calculated correctly
+@
+text
+@d29 1
+a29 1
+    noq=buffsz%(register_size);
+@
+
+
+1.12
+log
+@print the value of noi and noq
+@
+text
+@d24 3
+a26 3
+    
+    noi=buffsz%(register_no*register_size);
+    if(noi!=0)
+d30 1
+a30 1
+    if(noq!=0)
+d34 1
+a34 1
+    printk(KERN_INFO "noi: %d  bytes\n",noi);
+@
+
+
+1.11
+log
+@braces are used instead of pointer.
+@
+text
+@d33 7
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d81 2
+a82 2
+              		tempqset->(data+j)=(char*)kmalloc(register_size*sizeof(char),GFP_KERNEL); 
+              		if(!(tempqset->(data+j)))
+@
+
+
+1.9
+log
+@scull memory is allocated for device
+@
+text
+@d8 1
+a8 1
+    Qset *tempqset,*new=NULL;
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a4 1
+ssize_t devWrite(struct file *filp,const char __user *buff,size_t count,loff_t *offptr)
+d8 2
+a9 2
+    Qset *tempqset=NULL;
+    int noi;
+d17 1
+a17 1
+    printk(KERN_INFO "%lu size\n",strlen(buff));
+a18 1
+    
+d20 1
+a20 1
+    printk(KERN_INFO "%lu size\n",count);
+d25 73
+a97 2
+   // noi=
+   
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d6 5
+d14 1
+a14 1
+ 
+d19 9
+a27 5
+
+    /*#ifdef DEBUG
+    printk(KERN_INFO "%d size\n",sizeof(buff));
+    #endif*/
+
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d12 1
+a12 1
+    printk(KERN_INFO "%d size\n",strlen(buff));
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+   /* #ifdef DEBUG
+d13 4
+a17 4
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%d size\n",sizeof(*buff));
+    #endif
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d16 1
+a16 1
+    printk(KERN_INFO "%d size\n",sizeof(buff));
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d11 4
+d16 1
+a16 1
+    printk(KERN_INFO "%d size\n",strlen(buff));
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d12 1
+a12 1
+    printk(KERN_INFO "size\n",strlen(buff));
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d10 4
+a13 1
+    
+@

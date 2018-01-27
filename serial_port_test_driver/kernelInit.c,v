@@ -1,0 +1,1690 @@
+head	1.71;
+access;
+symbols;
+locks
+	emblogic:1.71; strict;
+comment	@ * @;
+
+
+1.71
+date	2018.01.06.07.23.39;	author emblogic;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2018.01.06.04.06.56;	author emblogic;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2017.12.23.10.03.52;	author emblogic;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2017.12.23.10.02.37;	author emblogic;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2017.12.22.12.31.11;	author root;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2017.12.22.10.11.28;	author kartikgupta;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2017.12.22.09.49.51;	author kartikgupta;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2017.12.22.09.46.45;	author kartikgupta;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2017.12.22.09.42.50;	author kartikgupta;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2017.12.22.09.41.59;	author kartikgupta;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2017.12.22.09.39.33;	author kartikgupta;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2017.12.22.09.36.05;	author kartikgupta;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2017.12.22.09.33.16;	author kartikgupta;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2017.12.22.09.31.20;	author kartikgupta;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2017.12.22.09.28.43;	author kartikgupta;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2017.12.22.09.28.12;	author kartikgupta;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2017.12.22.07.48.13;	author kartikgupta;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2017.12.22.07.43.31;	author kartikgupta;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2017.12.22.07.38.22;	author kartikgupta;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2017.12.22.07.25.40;	author kartikgupta;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2017.12.22.07.24.20;	author kartikgupta;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2017.12.22.07.24.02;	author kartikgupta;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2017.12.22.07.23.02;	author kartikgupta;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2017.12.22.07.21.18;	author kartikgupta;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2017.12.21.08.09.49;	author kartikgupta;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2017.12.15.20.49.20;	author kartikgupta;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2017.12.07.05.55.50;	author kartikgupta;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2017.11.16.07.56.06;	author kartikgupta;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2017.11.16.07.55.34;	author kartikgupta;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2017.11.16.07.50.25;	author kartikgupta;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2017.11.09.17.02.56;	author kartikgupta;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2017.11.01.15.50.31;	author root;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2017.10.31.07.35.45;	author root;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2017.10.31.07.17.35;	author root;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2017.10.30.23.57.59;	author root;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2017.10.29.09.38.33;	author root;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2017.10.29.09.07.20;	author root;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2017.10.29.04.26.43;	author root;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2017.10.29.04.26.04;	author root;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2017.10.29.04.25.28;	author root;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2017.10.29.02.23.17;	author root;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2017.10.27.23.57.51;	author root;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2017.10.27.23.54.08;	author root;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2017.10.27.23.50.07;	author root;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2017.10.27.23.48.15;	author root;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2017.10.27.23.47.30;	author root;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2017.10.27.23.44.00;	author root;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.10.26.12.35.26;	author root;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2017.10.26.08.13.42;	author kartikgupta;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.10.26.08.00.48;	author kartikgupta;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.10.26.07.07.02;	author kartikgupta;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.10.26.06.56.36;	author kartikgupta;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.10.26.06.46.54;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.10.15.10.22.10;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.10.15.10.18.44;	author kartikgupta;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.10.15.10.13.04;	author kartikgupta;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.10.15.08.14.58;	author kartikgupta;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.10.15.07.20.12;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.10.15.06.00.59;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.10.15.06.00.12;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.10.15.05.54.41;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.10.15.05.53.03;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.10.14.07.48.29;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.10.14.07.14.23;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.10.14.07.03.34;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.10.14.07.02.20;	author kartikgupta;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.10.14.05.59.26;	author kartikgupta;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.10.14.05.56.31;	author kartikgupta;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.10.14.05.36.01;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.10.13.23.54.42;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.10.13.23.25.42;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@hello kernel message is printed during loading mylkm
+@
+
+
+1.71
+log
+@*** empty log message ***
+@
+text
+@#include "header.h"
+#include "declaration.h"
+#include "foper.h"
+
+//MODULE_LICENSE("GPL");
+
+
+EXPORT_SYMBOL(myModule);
+
+static int __init kernel_init(void);
+module_init(kernel_init);
+
+int majorno,minorno,nod;
+int register_size=REGSIZE;
+int register_no=REGNO;
+int device_size=DEVSIZE;
+int data_size=DATASIZE;
+dev_t devno,devid;
+unsigned long tvar1,tvar2;
+//Dev *D_dev[100];
+Dev *D_dev;
+
+//module_param(nod,int,S_IRUGO);
+
+static int __init kernel_init(void)
+{
+    int ret,nd , pret;
+    unsigned long j1,j2;
+    nod=1;
+    #ifdef DEBUG
+    printk(KERN_INFO "%s: Begin \n",__func__);
+    #endif
+    
+    #ifdef DEBUG
+    printk("HELLO KERNEL\n");
+    printk("nod is :%d\n",nod);
+    #endif
+
+    //device registration method 1
+    /* 
+    majorno=register_chrdev(MAJORNO,DEVNAME,&fops);
+    printk(KERN_INFO "Major No. is %d\n",majorno);
+    */
+    
+    //device registration method 2
+     //nod=NOD;
+    
+     majorno=MAJOR(devno);
+     minorno=MINOR(devno);
+     
+     #ifdef DEBUG
+     printk(KERN_INFO "Initially Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+     #endif
+
+    if(majorno==0)
+    {
+     ret=alloc_chrdev_region(&devno,minorno,nod,DEVNAME);           //dynamic allocation of major no.
+     if(ret<0)
+      {  
+         #ifdef DEBUG
+         printk(KERN_INFO "alloc_chrdev_region\n");
+         #endif
+         goto ERR;
+      }
+    
+      majorno=MAJOR(devno);
+      minorno=MINOR(devno);
+
+      #ifdef DEBUG
+      printk(KERN_INFO "After alloc-->Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+      #endif
+    }
+ 
+   else
+    {
+       ret=register_chrdev_region(devno,1,DEVNAME);             //for already known major no.
+       if(ret<0)
+       {
+         #ifdef DEBUG
+         printk(KERN_INFO "register_chrdev_region\n");
+         #endif
+         goto ERR;
+       }
+      
+       majorno=MAJOR(devno);
+       minorno=MINOR(devno);
+
+       #ifdef DEBUG
+       printk(KERN_INFO "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+       #endif
+    }  
+
+   // get memory for scull device
+     
+	pret = check_region(PORTADDR,3) ;
+	 #ifdef DEBUG
+	 printk(KERN_INFO "pret : %d\n", pret);
+	 #endif
+	if(pret <0)
+	{
+                release_region(PORTADDR,3);
+		request_region(PORTADDR, 3, DEVNAME);
+	}
+
+	if(pret == 0)
+	{
+//	kernel will release port addresses 
+		request_region(PORTADDR, 3, DEVNAME);
+	}
+
+    D_dev=(struct Dev*)kmalloc(nod*sizeof(struct Dev),GFP_KERNEL);                //get free page mem from kernel
+    if(!D_dev)
+    {
+         #ifdef DEBUG
+         printk(KERN_INFO "kmalloc:\n");
+         #endif
+         goto ERR;
+    }
+     
+     D_dev=(struct Dev*)memset(D_dev,'\0',nod*sizeof(struct Dev));
+    
+    // initialize device structure cdev
+   
+    for(nd=0;nd<nod;nd++)
+    {   
+       	cdev_init(&(D_dev+nd)->c_dev,&fops);
+    	(D_dev+nd)->c_dev.ops=&fops;
+
+        init_timer(& ((D_dev+nd)->tmr) );
+    	(D_dev+nd)->register_size=register_size;
+    	(D_dev+nd)->register_no=register_no;
+    	(D_dev+nd)->device_size=device_size;
+    	(D_dev+nd)->data_size=data_size;
+        
+        sema_init(&(D_dev+nd)->sem,1);
+        
+        devid=MKDEV(majorno,nd);
+        
+        #ifdef DEBUG
+        printk(KERN_INFO "Before cdev_add Major No is %d ,and Minor No. is %d\n",MAJOR((D_dev+nd)->c_dev.dev),MINOR((D_dev+nd)->c_dev.dev));
+        #endif
+        
+        ret= cdev_add(&(D_dev+nd)->c_dev,devid,1);    //add each and every nod to device table and update dev field in cdev
+        if(ret<0)
+        {
+         
+         #ifdef DEBUG
+         printk(KERN_INFO "cdev_add:\n");
+         #endif
+         goto ERR;
+        }   
+       
+        (D_dev+nd)->tmr.function=timerFunc;
+        (D_dev+nd)->tmr.data=(unsigned long)1;
+    	j1=jiffies;
+	j2=j1 + (unsigned long)20000;
+    	printk(KERN_INFO "j1=%lu",j1);
+    	printk(KERN_INFO "j2=%lu",j2);
+
+    	(D_dev+nd)->tmr.expires=(unsigned long)j2;
+        add_timer(&(D_dev+nd)->tmr);
+         
+        #ifdef DEBUG
+        printk(KERN_INFO "After cdev_add Major No is %d ,and Minor No. is %d\n",MAJOR((D_dev+nd)->c_dev.dev),MINOR((D_dev+nd)->c_dev.dev));
+        #endif
+        
+        majorno=MAJOR(devid);
+        minorno=MINOR(devid);
+
+        #ifdef DEBUG
+        printk(KERN_INFO "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+        #endif
+    }
+      
+        #ifdef DEBUG
+        printk(KERN_INFO "%s: End \n",__func__);
+        #endif
+        return 0;
+
+    ERR:
+        #ifdef DEBUG
+        printk(KERN_ERR "%s: End with Error\n",__func__);
+        #endif
+        return -1;
+}
+
+int myModule()
+{
+   #ifdef DEBUG
+   printk(KERN_INFO "My first module called by another driver\n");
+   #endif
+   return 0;
+}
+@
+
+
+1.70
+log
+@*** empty log message ***
+@
+text
+@a47 12
+	pret = check_region(PORTADDR, 3);
+    #ifdef DEBUG
+    printk(KERN_INFO "pret : %d \n", pret);
+    #endif
+	if( pret == 0)
+	{
+		release_region(PORTADDR, 3);	
+		request_region(PORTADDR, 3 , DEVNAME);	
+	}
+	
+
+
+@
+
+
+1.69
+log
+@*** empty log message ***
+@
+text
+@d23 1
+a23 1
+module_param(nod,int,S_IRUGO);
+d29 1
+a29 1
+
+d48 12
+a106 2
+    while(1) 
+    {
+d111 7
+a117 1
+	if(pret == -3)
+a119 1
+		release_region(PORTADDR,3);
+a121 1
+    }   
+@
+
+
+1.68
+log
+@*** empty log message ***
+@
+text
+@d105 1
+a105 1
+		request_region(PORTADDDR, 3, DEVNAME);
+@
+
+
+1.67
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+    int ret,nd;
+d94 15
+a108 1
+    
+@
+
+
+1.66
+log
+@*** empty log message ***
+@
+text
+@d28 2
+a29 1
+        
+d33 1
+a33 1
+
+d139 6
+a144 1
+        (D_dev+nd)->tmr.expires=(unsigned long)10000;
+@
+
+
+1.65
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+        init_timer(&(D_dev+nd)->tmr);
+d137 1
+a137 1
+        (D_dev+nd)->tmr.data=1;
+@
+
+
+1.64
+log
+@*** empty log message ***
+@
+text
+@d138 1
+a138 1
+        (D_dev+nd)->tmr.expires=1000000;
+@
+
+
+1.63
+log
+@*** empty log message ***
+@
+text
+@d138 1
+a138 1
+        (D_dev+nd)->tmr.expires=100000;
+@
+
+
+1.62
+log
+@*** empty log message ***
+@
+text
+@d138 1
+a138 1
+        (D_dev+nd)->tmr.expires=10000;
+@
+
+
+1.61
+log
+@*** empty log message ***
+@
+text
+@d138 1
+a138 1
+        (D_dev+nd)->tmr.expires=1000;
+@
+
+
+1.60
+log
+@*** empty log message ***
+@
+text
+@d137 2
+@
+
+
+1.59
+log
+@*** empty log message ***
+@
+text
+@d136 1
+a136 1
+        (D_dev+nd)->tmr.function=tmrfp;
+@
+
+
+1.58
+log
+@*** empty log message ***
+@
+text
+@d136 1
+a136 1
+        (D_dev+nd)->tmr.function=timerFunc;
+@
+
+
+1.57
+log
+@*** empty log message ***
+@
+text
+@d136 1
+a136 1
+        D_dev+nd->tmr.function=timerFunc;
+@
+
+
+1.56
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+        init_timer((D_dev+nd)->tmr);
+@
+
+
+1.55
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+        init_timer(&(D_dev+nd)->tmr);
+d136 1
+a136 1
+        (D_dev+nd)->function=timerFunc;
+@
+
+
+1.54
+log
+@*** empty log message ***
+@
+text
+@d135 2
+a136 1
+        
+@
+
+
+1.53
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+        init_timer((D_dev+nd)->tmr);
+d136 1
+a136 1
+        add_timer(&D_dev+nd->tmr);
+@
+
+
+1.52
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+        init_timer(&(D_dev+nd)->tmr);
+d136 1
+a136 1
+        add_timer(D_dev+nd->tmr);
+@
+
+
+1.51
+log
+@*** empty log message ***
+@
+text
+@d112 1
+a112 1
+        init_timer((D_dev+nd)->tmr);
+@
+
+
+1.50
+log
+@*** empty log message ***
+@
+text
+@d136 1
+a136 1
+        add_timer((D_dev+nd)->tmr);
+@
+
+
+1.49
+log
+@*** empty log message ***
+@
+text
+@d136 1
+a136 1
+        add_timer(&((D_dev+nd)->tmr));
+@
+
+
+1.48
+log
+@*** empty log message ***
+@
+text
+@d136 1
+a136 1
+        add_timer(&(D_dev+nd)->tmr);
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d108 1
+a108 1
+    {
+d112 1
+d135 3
+a137 1
+    
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d19 1
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d115 1
+d117 1
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d115 1
+a115 1
+        
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d29 1
+a29 1
+    printk(KERN_INFO "%s: Begin \n"__func__);
+@
+
+
+1.42
+log
+@Goto stat added
+cdev_add is given argument 1 instead of nod
+@
+text
+@d145 1
+a145 1
+        printk(KERN_INFO "%s: End \n"__func__);
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d27 4
+a33 3
+    #endif
+    
+    #ifdef DEBUG
+d61 1
+a61 1
+         return -1;
+d80 1
+a80 1
+         return -1;
+d87 1
+a87 1
+       printk(KERN_ALERT "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+d99 1
+a99 1
+         return -1;
+d111 1
+a111 1
+    	/*(D_dev+nd)->register_size=register_size;
+d114 1
+a114 1
+    	(D_dev+nd)->data_size=data_size;*/
+d122 1
+a122 1
+        ret= cdev_add(&(D_dev+nd)->c_dev,devid,nod);    //add each and every nod to device table and update dev field in cdev
+d129 1
+a129 1
+         return -1;
+d144 10
+a153 1
+    return 0;
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d107 1
+a107 1
+    	cdev_init(&(D_dev+nd)->c_dev,&fops);
+d110 1
+a110 1
+    	(D_dev+nd)->register_size=register_size;
+d113 1
+a113 1
+    	(D_dev+nd)->data_size=data_size;
+d142 1
+a142 3
+
+    
+              
+@
+
+
+1.39
+log
+@comments added
+@
+text
+@d5 1
+a5 1
+MODULE_LICENSE("GPL");
+@
+
+
+1.38
+log
+@major minor no, are printed before and after cdev
+@
+text
+@d121 1
+a121 1
+        ret= cdev_add(&(D_dev+nd)->c_dev,devid,nod);
+d134 1
+a134 1
+
+@
+
+
+1.37
+log
+@device registration and device initialization done
+@
+text
+@d116 5
+a120 1
+
+d131 4
+@
+
+
+1.36
+log
+@arrow is used
+@
+text
+@d14 4
+a17 1
+int register_size,register_no,device_size,data_size;
+d105 1
+a105 1
+    for(nd=0;nd<100;nd++)
+d110 4
+a113 4
+    	/*D_dev[nd].register_size=REGSIZE;
+    	D_dev[nd].register_no=REGNO;
+    	D_dev[nd].device_size=DEVSIZE;
+    	D_dev[nd].data_size=DATASIZE;*/
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d104 2
+a105 2
+    	cdev_init(&D_dev[nd].c_dev,&fops);
+    	D_dev[nd].c_dev.ops=&fops;
+d114 1
+a114 1
+        ret= cdev_add(&D_dev[nd].c_dev,devid,nod);
+d128 1
+a128 1
+        printk(KERN_ALERT "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d28 4
+d41 1
+d70 1
+a70 1
+       ret=register_chrdev_region(devno,1,DEVNAME);             //works well for already known major no. we want to give
+d89 1
+a89 1
+    D_dev=(struct Dev*)kmalloc(sizeof(struct Dev)*nd,GFP_KERNEL);                //get free page mem from kernel
+d98 1
+a98 1
+     D_dev=(struct Dev*)memset(D_dev,'\0',sizeof(struct Dev)*nd);
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d94 1
+a94 1
+   }  
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d85 1
+a85 1
+    if(!D_dev[nd])
+@
+
+
+1.31
+log
+@nod=NOD commented
+@
+text
+@d16 2
+a17 1
+Dev *D_dev[100];
+d84 1
+a84 3
+   for(nd=0;nd<100;nd++)
+   {
+    D_dev[nd]=(struct Dev*)kmalloc(sizeof(struct Dev),GFP_KERNEL);                //get free page mem from kernel
+d93 1
+a93 1
+     D_dev[nd]=(struct Dev*)memset(D_dev,'\0',sizeof(struct Dev));
+d99 2
+a100 2
+    	cdev_init(&D_dev[nd]->c_dev,&fops);
+    	D_dev[nd]->c_dev.ops=&fops;
+d102 4
+a105 4
+    	D_dev[nd]->register_size=REGSIZE;
+    	D_dev[nd]->register_no=REGNO;
+    	D_dev[nd]->device_size=DEVSIZE;
+    	D_dev[nd]->data_size=DATASIZE;
+d109 1
+a109 1
+        ret= cdev_add(&D_dev[nd]->c_dev,devid,nod);
+@
+
+
+1.30
+log
+@nod replaced with 100
+@
+text
+@d35 1
+a35 1
+     nod=NOD;
+d83 1
+a83 1
+    for(nd=0;nd<100;nd++)
+d94 1
+a94 1
+    D_dev[nd]=(struct Dev*)memset(D_dev,'\0',sizeof(struct Dev));
+@
+
+
+1.29
+log
+@loop used for kmalloc
+@
+text
+@d16 1
+a16 1
+Dev *D_dev[nod];
+@
+
+
+1.28
+log
+@. replaced with ->
+@
+text
+@d82 5
+a86 3
+   
+    D_dev=(struct Dev*)kmalloc(sizeof(struct Dev),GFP_KERNEL);                //get free page mem from kernel
+    if(!D_dev)
+d94 2
+a95 2
+    D_dev=(struct Dev*)memset(D_dev,'\0',sizeof(struct Dev));
+     
+@
+
+
+1.27
+log
+@*dev[nod] used
+@
+text
+@d98 2
+a99 2
+    	cdev_init(&D_dev[nd].c_dev,&fops);
+    	D_dev[nd].c_dev.ops=&fops;
+d101 4
+a104 4
+    	D_dev[nd].register_size=REGSIZE;
+    	D_dev[nd].register_no=REGNO;
+    	D_dev[nd].device_size=DEVSIZE;
+    	D_dev[nd].data_size=DATASIZE;
+d108 1
+a108 1
+        ret= cdev_add(&D_dev[nd].c_dev,devid,nod);
+@
+
+
+1.26
+log
+@arrow relaced with .
+@
+text
+@d16 1
+a16 1
+Dev *D_dev;
+@
+
+
+1.25
+log
+@loop implemented for nod devices
+major , minor no. print using MKDEV
+@
+text
+@d98 2
+a99 2
+    	cdev_init(&D_dev[nd]->c_dev,&fops);
+    	D_dev[nd]->c_dev.ops=&fops;
+d101 4
+a104 4
+    	D_dev[nd]->register_size=REGSIZE;
+    	D_dev[nd]->register_no=REGNO;
+    	D_dev[nd]->device_size=DEVSIZE;
+    	D_dev[nd]->data_size=DATASIZE;
+d108 1
+a108 1
+        ret= cdev_add(&D_dev[nd]->c_dev,devid,nod);
+@
+
+
+1.24
+log
+@global variables for parameters declared 
+module_param macro used
+@
+text
+@d22 1
+a22 1
+    int ret;
+d64 1
+a64 1
+       ret=register_chrdev_region(devno,1,DEVNAME);             //works for already known major no. we want to give
+d82 1
+a82 1
+
+d95 5
+a99 3
+ 
+    cdev_init(&D_dev->c_dev,&fops);
+    D_dev->c_dev.ops=&fops;
+d101 10
+a110 8
+    register_size=REGSIZE;
+    register_no=REGNO;
+    device_size=DEVSIZE;
+    data_size=DATASIZE;
+
+    ret= cdev_add(&D_dev->c_dev,devid,nod);
+    if(ret<0)
+    {
+d116 9
+a124 4
+    }   
+ 
+    /*majorno=MAJOR(devid);
+    minorno=MINOR(devid);*/
+a125 3
+       #ifdef DEBUG
+       printk(KERN_ALERT "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+       #endif
+@
+
+
+1.23
+log
+@cdev_add failed condn added
+@
+text
+@d14 1
+d18 2
+d98 6
+a103 1
+    
+d109 1
+a109 1
+         printk(KERN_INFO "kmalloc:\n");
+d114 2
+a115 2
+    majorno=MAJOR(devid);
+    minorno=MINOR(devid);
+d120 2
+a121 1
+                  
+@
+
+
+1.22
+log
+@cdev structure is initialized and added using cdev_init and cdev_add
+@
+text
+@d95 11
+a105 2
+    cdev_add(&D_dev->c_dev,devid,nod);
+       
+@
+
+
+1.21
+log
+@*dev replaced with *D_dev
+@
+text
+@d14 1
+a14 1
+dev_t devno;
+d90 14
+a103 2
+    
+                
+d109 1
+d111 1
+@
+
+
+1.20
+log
+@DEV is replaced with Dev in memset fun
+@
+text
+@d15 1
+a15 1
+Dev *dev;
+d80 2
+a81 2
+    dev=(struct Dev*)kmalloc(sizeof(struct Dev),GFP_KERNEL);                //get free page mem from kernel
+    if(!dev)
+d89 2
+a90 1
+    dev=(struct Dev*)memset(dev,'\0',sizeof(struct Dev));
+@
+
+
+1.19
+log
+@kmalloc used to allocate mem to struct Dev
+@
+text
+@d19 2
+a24 1
+    int ret;
+d80 1
+a80 1
+    dev=(Dev*)kmalloc(sizeof(Dev),GFP_KERNEL);                //get free page mem from kernel
+d89 1
+a89 1
+    dev=(Dev*)memset(dev,'\0',sizeof(DEV));
+@
+
+
+1.18
+log
+@if else condn added
+@
+text
+@d13 1
+a13 1
+int majorno,minorno;
+d15 2
+d19 1
+d21 2
+a22 1
+  
+d27 1
+a27 1
+    printk(KERN_ALERT "Major No. is %d\n",majorno);
+d31 1
+a31 1
+
+d34 2
+d37 2
+a38 1
+    
+d40 2
+a41 2
+   {
+     ret=alloc_chrdev_region(&devno,minorno,NOD,DEVNAME);
+d43 2
+a44 1
+      {
+d46 1
+d52 2
+d55 2
+a56 1
+   }
+d60 1
+a60 1
+       ret=register_chrdev_region(devno,1,DEVNAME);
+d63 1
+d65 1
+d68 1
+d71 2
+a72 1
+    
+d74 1
+d76 14
+a89 1
+    
+@
+
+
+1.17
+log
+@register_chrdev_region included in printk
+@
+text
+@d32 2
+d44 3
+a46 3
+    
+   
+    if(majorno>0)
+@
+
+
+1.16
+log
+@device is reregisterred
+@
+text
+@d49 1
+a49 1
+         printk(KERN_INFO "alloc_chrdev_region\n");
+@
+
+
+1.15
+log
+@devno removed
+@
+text
+@d43 2
+a44 3
+    
+    //else
+    /*if(majorno>0)
+d47 5
+a51 1
+      
+d56 1
+a56 1
+    } */  
+@
+
+
+1.14
+log
+@devno is taken inside fun instead global
+@
+text
+@d14 1
+a14 1
+//dev_t devno;
+a19 1
+    dev_t devno=0;
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+dev_t devno;
+d20 1
+a20 1
+
+d29 3
+a31 5
+    //if(majorno==0)
+      majorno=MAJOR(devno);
+      minorno=MINOR(devno);
+      
+      printk(KERN_INFO "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+d42 1
+a42 2
+    
+      printk(KERN_INFO "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+@
+
+
+1.12
+log
+@KERN_INFO added
+@
+text
+@d64 1
+a64 1
+   printk(KERT_INFO "My first module called by another driver\n");
+@
+
+
+1.11
+log
+@device reregister commented
+@
+text
+@d33 2
+a34 2
+      printk(KERN_ALERT "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+    {
+d38 1
+a38 1
+         printk(KERN_ALERT "alloc_chrdev_region\n");
+d45 2
+a46 2
+      printk(KERN_ALERT "Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+    }
+d64 1
+a64 1
+   printk(KERT_ALERT "My first module called by another driver\n");
+@
+
+
+1.10
+log
+@major minor no. printed before alloc_chrdev_region
+@
+text
+@d48 1
+a48 1
+    else
+@
+
+
+1.9
+log
+@for more devices to same driver register_chrdev_region is used
+major and minor no. are reprinted
+@
+text
+@d24 1
+a24 1
+    printk("Major No. is %d\n",majorno);
+d29 5
+a33 1
+    if(majorno==0)
+d38 1
+a38 1
+         printk("error:alloc_chrdev_region\n");
+d45 1
+a45 1
+      printk("Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+d49 1
+a49 1
+    if(majorno>0)
+d56 2
+a57 2
+       printk("Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+    }   
+d64 1
+a64 1
+   printk("My first module called by another driver\n");
+@
+
+
+1.8
+log
+@MAJOR and MINOR macors commented
+@
+text
+@a27 6
+    ret=alloc_chrdev_region(&devno,minorno,NOD,DEVNAME);
+    if(ret<0)
+     {
+        printk("error:alloc_chrdev_region\n");
+        return -1;
+     }
+d29 8
+a36 2
+    //majorno=MAJOR(devno);
+    //minorno=MINOR(devno);
+d38 16
+a53 1
+    printk("Major No is %d ,and Minor No. is %d\n",majorno,minorno);
+@
+
+
+1.7
+log
+@devno is declared with dev_t type
+@
+text
+@d35 2
+a36 2
+    majorno=MAJOR(devno);
+    minorno=MINOR(devno);
+@
+
+
+1.6
+log
+@device is registered using alloc_chrdev_region
+major and minor no. printed using macros
+@
+text
+@d13 2
+a14 2
+int majorno,minorno,devno;
+
+@
+
+
+1.5
+log
+@foper.h is defined
+@
+text
+@d13 1
+a13 1
+int majorno,minorno;
+d19 4
+a22 2
+    //device registration
+    
+d25 9
+d35 5
+@
+
+
+1.4
+log
+@kernel_init is declared again
+@
+text
+@d3 1
+@
+
+
+1.3
+log
+@device is registered with register_chrdev
+@
+text
+@d8 2
+@
+
+
+1.2
+log
+@__init is added before function name
+@
+text
+@d2 1
+a6 3
+static int __init kernel_init(void);
+int myModule(void);
+
+d10 2
+d15 6
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d6 1
+a6 1
+static int kernel_init(void);
+d12 1
+a12 1
+static int kernel_init(void)
+@

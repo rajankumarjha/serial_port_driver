@@ -1,0 +1,77 @@
+head	1.3;
+access;
+symbols;
+locks
+	root:1.3; strict;
+comment	@ * @;
+
+
+1.3
+date	2017.12.22.09.36.44;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.12.22.07.44.18;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.12.22.07.21.20;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@#include"header.h"
+#include"declaration.h"
+
+void timerFunc(unsigned long data)
+{
+    
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :Begin\n",__func__);
+    #endif
+ 
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End\n",__func__);
+    #endif
+   
+    //return 0;
+}
+
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a4 1
+int timerFunc(unsigned long data)
+d16 1
+a16 1
+    return 0;
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 1
+a4 1
+void timerFunc(unsigned long data)
+@

@@ -1,0 +1,85 @@
+#!/bin/bash
+
+
+#----------------------------------------------------------------------
+#	Create User Application and compilation
+#----------------------------------------------------------------------
+compileApp()
+{
+	read -p "You want to compile Your Application.? [y/n]: " choice
+	if [ $choice == 'y' ]; then
+		cd $(pwd)/application
+		make clean
+		if (make)then
+            		echo "Compilation Done!! SUCCESS !!"
+            		ls -ll
+			cd ..
+		fi
+
+	fi
+
+}
+#----------------------------------------------------------------------
+#	insert Driver module .ko in kernel
+#----------------------------------------------------------------------
+insertModule()
+{
+	read -p "You want to insert module in kernel..? [y/n]: " choice
+	if [ $choice == 'y' ]; then
+		cd $(pwd)/modules && insmod myChrDev.ko
+		read
+		lsmod |grep myChrDev
+		read
+		dmesg
+		read
+		cat /proc/devices
+		echo "Pls! Enter Major Number"
+		read major
+		#echo "Pls! Enter Minor Number"
+		#read minor
+		cd ..
+		ls -ll
+		read
+		echo "Creating VFS Node!"
+		echo "mknod ./myDev c major mino"
+		#mknod ./myDev c $major $minor
+		mknod ./myDev c $major 0
+		ls -ll
+		read -p "You want to run App..? [y/n]: " choice
+		if [ $choice == 'y' ]; then
+			cd $(pwd)/application
+			./myApp
+			read
+			dmesg
+		fi
+		read
+
+		rmmod myChrDev
+		
+		dmesg
+	fi
+}
+
+
+#----------------------------------------------------------------------
+#	driver compilation
+#----------------------------------------------------------------------
+read -p "Do You Wanna Compile! myChrDev Module..? [y/n]: " choice
+if [ $choice == 'y' ]; then
+    echo "Compilation Begins...!"
+    make clean
+    unlink myDev
+    if (make)then
+	    echo "Compilation Done!! SUCCESS !!"
+	    ls -ll
+	    read
+	    compileApp
+	    insertModule
+    else
+	    echo "Compilation!! FAILED!!"
+    fi
+else
+    echo "Sorry!! You Cancelled the Compilation. Exiting!!"
+fi
+
+

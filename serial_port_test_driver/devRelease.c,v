@@ -1,0 +1,58 @@
+head	1.2;
+access;
+symbols;
+locks
+	emblogic:1.2; strict;
+comment	@ * @;
+
+
+1.2
+date	2017.11.17.04.08.38;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.11.01.15.50.09;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@just printk used to check.
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@#include"header.h"
+#include"declaration.h"
+
+int devRelease(struct inode *inodep,struct file *filp)
+{
+    
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :Begin\n",__func__);
+    #endif
+ 
+    
+
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End\n",__func__);
+    #endif
+   
+    return 0;
+}
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d6 1
+@

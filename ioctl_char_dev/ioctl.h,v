@@ -1,0 +1,289 @@
+head	1.10;
+access;
+symbols;
+locks
+	root:1.10; strict;
+comment	@ * @;
+
+
+1.10
+date	2017.12.18.20.16.10;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.12.18.20.06.49;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.12.18.20.01.48;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.12.18.19.50.49;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.12.18.05.58.02;	author kartikgupta;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.12.18.05.41.06;	author kartikgupta;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.12.18.01.32.16;	author kartikgupta;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.12.18.01.22.09;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.12.17.16.57.59;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.12.17.16.54.31;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@/*struct parameters 
+{ 
+   int regsize;
+   int regno;
+   int devsize;
+   int datasize;
+   int baudrate;
+;*/
+
+#ifndef MAGIC
+#define MAGIC 'K'  
+#endif
+
+#ifndef DEVRESET
+#define DEVRESET     _IO(MAGIC,0)      //no read write requires in reset  
+#endif
+
+#ifndef GETREGSIZE   
+#define GETREGSIZE   _IOR(MAGIC,1,int)        //size is found by macro expansion which is using sizeof(type)  
+#endif
+
+#ifndef GETREGNO
+#define GETREGNO     _IOR(MAGIC,2,int)       //max arg size is 2^14=16KB;
+#endif
+
+#ifndef GETDEVSIZE
+#define GETDEVSIZE   _IOR(MAGIC,3,int) 
+#endif
+
+#ifndef GETDATASIZE
+#define GETDATASIZE  _IOR(MAGIC,4,int) 
+#endif
+
+#ifndef GETBAUDRATE
+#define GETBAUDRATE  _IOR(MAGIC,5,int) 
+#endif
+
+#ifndef SETREGSIZE
+#define SETREGSIZE   _IOW(MAGIC,6,int) 
+#endif
+
+#ifndef SETREGNO
+#define SETREGNO     _IOW(MAGIC,7,int) 
+#endif
+
+/*#ifndef SETREGSIZE
+#define SETREGSIZE   _IOWR(MAGIC,6,int) 
+#endif
+
+#ifndef SETREGNO
+#define SETREGNO     _IOWR(MAGIC,7,int) 
+#endif*/
+
+#ifndef SETBAUDRATE
+#define SETBAUDRATE  _IOW(MAGIC,8,int) 
+#endif
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d38 1
+a38 1
+/*#ifndef SETREGSIZE
+d44 1
+a44 1
+#endif*/
+d46 1
+a46 1
+#ifndef SETREGSIZE
+d52 1
+a52 1
+#endif
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d38 1
+a38 1
+#ifndef SETREGSIZE
+d44 8
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+};*/
+d19 1
+a19 1
+#define GETREGSIZE   _IOR(MAGIC,1,int) 
+d23 1
+a23 1
+#define GETREGNO     _IOR(MAGIC,2,int) 
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+struct parameters 
+d8 1
+a8 1
+};
+d19 1
+a19 1
+#define GETREGSIZE   _IOR(MAGIC,1,struct parameters) 
+d23 1
+a23 1
+#define GETREGNO     _IOR(MAGIC,2,struct parameters) 
+d27 1
+a27 1
+#define GETDEVSIZE   _IOR(MAGIC,3,struct parameters) 
+d31 1
+a31 1
+#define GETDATASIZE  _IOR(MAGIC,4,struct parameters) 
+d35 1
+a35 1
+#define GETBAUDRATE  _IOR(MAGIC,5,struct parameters) 
+d39 1
+a39 1
+#define SETREGSIZE   _IOW(MAGIC,6,struct parameters) 
+d43 1
+a43 1
+#define SETREGNO     _IOW(MAGIC,7,struct parameters) 
+d47 1
+a47 1
+#define SETBAUDRATE  _IOW(MAGIC,8,struct parameters) 
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+}
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d1 8
+d19 1
+a19 1
+#define GETREGSIZE   _IOR(MAGIC,1,int) 
+d23 1
+a23 1
+#define GETREGNO     _IOR(MAGIC,2,int) 
+d27 1
+a27 1
+#define GETDEVSIZE   _IOR(MAGIC,3,int) 
+d31 1
+a31 1
+#define GETDATASIZE  _IOR(MAGIC,4,int) 
+d35 1
+a35 1
+#define GETBAUDRATE  _IOR(MAGIC,5,int) 
+d39 1
+a39 1
+#define SETREGSIZE   _IOW(MAGIC,6,int) 
+d43 1
+a43 1
+#define SETREGNO     _IOW(MAGIC,7,int) 
+d47 1
+a47 1
+#define SETBAUDRATE  _IOW(MAGIC,8,int) 
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+#define GETREGSIZE   _IOW(MAGIC,1,int) 
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+#define GETREGSIZE   _IOR(MAGIC,1,int) 
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d7 1
+a7 1
+#define DEVRESET     _IO(MAGIC,0,int)      //no read write requires in reset  
+@

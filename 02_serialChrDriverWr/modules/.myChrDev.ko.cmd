@@ -1,0 +1,1 @@
+cmd_/home/emblogic/kartik/02_serialChrDriverWr/myChrDev.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emblogic/kartik/02_serialChrDriverWr/myChrDev.ko /home/emblogic/kartik/02_serialChrDriverWr/myChrDev.o /home/emblogic/kartik/02_serialChrDriverWr/myChrDev.mod.o

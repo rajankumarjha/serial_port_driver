@@ -1,0 +1,477 @@
+head	1.27;
+access;
+symbols;
+locks
+	emblogic:1.27; strict;
+comment	@ * @;
+
+
+1.27
+date	2017.12.15.20.49.03;	author kartikgupta;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2017.11.25.11.39.11;	author kartikgupta;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2017.11.25.11.38.50;	author kartikgupta;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.11.25.11.38.25;	author kartikgupta;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2017.11.25.11.29.43;	author kartikgupta;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.11.25.11.22.51;	author kartikgupta;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.11.24.10.13.59;	author kartikgupta;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.11.24.10.11.45;	author kartikgupta;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.11.24.09.25.38;	author kartikgupta;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.11.24.09.16.28;	author kartikgupta;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.11.19.09.17.22;	author kartikgupta;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.11.09.10.47.20;	author kartikgupta;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.11.09.10.18.26;	author kartikgupta;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.11.09.06.47.04;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.11.09.06.46.20;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.11.09.06.38.19;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.11.09.06.22.02;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.11.08.18.07.27;	author root;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.11.08.18.06.03;	author root;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.11.08.18.02.45;	author root;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.11.01.16.09.25;	author root;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.11.01.15.49.01;	author root;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.10.31.07.27.58;	author root;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.10.31.07.17.05;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.10.14.05.51.45;	author kartikgupta;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.10.14.05.44.22;	author kartikgupta;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.10.14.05.34.03;	author kartikgupta;	state Exp;
+branches;
+next	;
+
+
+desc
+@struct file_operations is declared
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@struct file_operations fops=
+ {
+          open         	: devOpen,
+          release  	: devRelease,
+          write    	: devWrite,
+          read     	: devRead,
+          llseek   	: devLlseek,
+          unlocked_ioctl: devIoctl
+         
+ };
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d3 6
+a8 5
+          open     : devOpen,
+          release  : devRelease,
+          write    : devWrite,
+          read     : devRead,
+          llseek   : devLlseek
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+          llseek    : devLlseek,
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+          read     : devRead
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+     //     llseek    : devLlseek,
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d4 1
+d6 1
+a6 1
+          read     : devRead,
+a7 1
+     //     release  : devRelease
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+          release  : devRelease
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+          llseek    : devLlseek,
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d6 1
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+          //release  : devRelease
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+          release  : devRelease
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d5 1
+@
+
+
+1.15
+log
+@write fun included
+@
+text
+@d4 2
+a5 2
+          write    : devWrite
+          //release  : devRelease
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a4 2
+          //read     : devRead,
+          //write    : devWrite,
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d4 2
+a5 2
+          read     : devRead,
+          write    : devWrite,
+@
+
+
+1.12
+log
+@release fun commented
+@
+text
+@d4 2
+a5 2
+         //read     : devRead,
+         //write    : devWrite,
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+          release  : devRelease
+@
+
+
+1.10
+log
+@= is used
+@
+text
+@d3 1
+a3 1
+         //open     : devOpen,
+d6 1
+a6 1
+         //release  : devRelease,
+a7 2
+         .open     = devOpen,
+         .release  = devRelease,
+@
+
+
+1.9
+log
+@. is used
+@
+text
+@d3 1
+a3 1
+         .open     : devOpen,
+d6 4
+a9 1
+         .release  : devRelease,
+@
+
+
+1.8
+log
+@, used at last func
+@
+text
+@d3 1
+a3 1
+         open     : devOpen,
+d6 1
+a6 1
+         release  : devRelease,
+@
+
+
+1.7
+log
+@read and write commented
+@
+text
+@d6 1
+a6 1
+         release  : devRelease
+@
+
+
+1.6
+log
+@file opr read write open release written
+@
+text
+@d4 2
+a5 2
+         read     : devRead,
+         write    : devWrite,
+@
+
+
+1.5
+log
+@all fun commented
+@
+text
+@d3 4
+a6 4
+        //open     : device_open,
+        //read     : device_read,
+        //write    : device_write,
+        //release  : device_release
+@
+
+
+1.4
+log
+@func name for open , read ,write and release added
+@
+text
+@d3 4
+a6 4
+        open     : device_open,
+        read     : device_read,
+        write    : device_write,
+        release  : device_release
+@
+
+
+1.3
+log
+@fops variable is placed before assignment operator
+@
+text
+@d2 6
+a7 1
+{};
+@
+
+
+1.2
+log
+@struct is terminated with ;
+@
+text
+@d1 1
+a1 1
+struct file_operations=fops
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+a2 1
+{}
+@

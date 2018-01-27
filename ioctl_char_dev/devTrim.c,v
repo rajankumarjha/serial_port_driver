@@ -1,0 +1,366 @@
+head	1.14;
+access;
+symbols;
+locks
+	root:1.14; strict;
+comment	@ * @;
+
+
+1.14
+date	2017.12.07.05.55.49;	author kartikgupta;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.12.05.06.25.40;	author kartikgupta;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.12.05.05.51.59;	author kartikgupta;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.12.05.05.09.14;	author kartikgupta;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.12.04.18.06.15;	author kartikgupta;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.12.04.17.59.58;	author kartikgupta;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.12.04.15.33.49;	author kartikgupta;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.12.04.15.33.21;	author kartikgupta;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.11.17.10.39.58;	author kartikgupta;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.11.17.04.14.06;	author kartikgupta;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.11.17.04.08.41;	author kartikgupta;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.11.08.17.52.46;	author root;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.11.08.17.33.21;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.11.08.17.17.36;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@check access mode
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@#include"header.h"
+#include"declaration.h"
+
+int devTrim(Dev *devlp)
+{
+    int l;
+    Qset *lqset=NULL;
+    Qset *slast=NULL;
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :Begin\n",__func__);
+    #endif
+        
+    if(!devlp)
+    {
+      #ifdef DEBUG
+      printk(KERN_INFO "Device not found\n");
+      #endif
+      goto RET;
+    }
+    
+    if(!devlp->sqset)
+    {
+      #ifdef DEBUG
+      printk(KERN_INFO "Device found but nothing to trim\n");
+      #endif
+      goto RET;
+    }
+
+    if(down_interruptible(&devlp->sem))
+      return -ERESTARTSYS;
+
+    slast=lqset=devlp->sqset;
+    while(lqset)
+    {
+        while(lqset->next)
+        {
+          slast=lqset;
+          lqset=lqset->next; 
+        }
+        
+        for(l=register_no-1;l>=0;l--)
+        {
+           if(lqset->data[l])
+           {
+             kfree(lqset->data[l]);
+             lqset->data[l]=NULL;   
+           }            
+        } 
+
+        kfree(lqset->data); 
+        lqset->data=NULL;
+        
+        if(slast->next)
+       	 {
+           kfree(slast->next);
+           slast->next=NULL;
+         }
+        else
+         {
+            kfree(slast);
+            devlp->sqset=NULL;
+         }
+ 
+        slast=lqset=devlp->sqset;
+    }    
+
+    up(&devlp->sem);
+   
+    #ifdef DEBUG
+    printk(KERN_INFO "%s :End\n",__func__);
+    #endif
+    return 0;
+   
+  RET:
+      #ifdef DEBUG
+      printk(KERN_INFO "%s :End\n",__func__);
+      #endif
+      return 0;
+}
+
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d29 3
+d66 3
+a68 1
+    
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@a31 4
+      	#ifdef DEBUG
+      	printk(KERN_INFO "just start\n");
+        #endif
+
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@a37 3
+      		#ifdef DEBUG
+      		printk(KERN_INFO "traversing in list and lqset is %p\n",lqset);
+        	#endif
+a43 3
+      		#ifdef DEBUG
+      		printk(KERN_INFO "in for loop\n");
+        	#endif
+a45 3
+      		#ifdef DEBUG
+      		printk(KERN_INFO "in for if condn \n");
+        	#endif
+a50 3
+      		#ifdef DEBUG
+      		printk(KERN_INFO "out of for loop \n");
+        	#endif
+a55 3
+      		#ifdef DEBUG
+      		printk(KERN_INFO "in slast if \n");
+        	#endif
+a60 3
+      		#ifdef DEBUG
+      		printk(KERN_INFO "in slast else \n");
+        	#endif
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d39 1
+a39 1
+      		printk(KERN_INFO "traversing in list\n");
+d56 1
+a56 1
+             lqset->data[l]=NULL;       //??
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d32 4
+d38 3
+d47 3
+d52 3
+d60 3
+d68 3
+d76 3
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d6 1
+d8 1
+a8 1
+    
+d28 35
+a62 2
+    
+    
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d17 1
+a17 1
+      goto ERR;
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d6 2
+d25 1
+d27 3
+a29 1
+
+d35 1
+a35 1
+  ERR:
+d37 1
+a37 1
+      printk(KERN_INFO "%s :End with error\n",__func__);
+d39 1
+a39 1
+      return -1;
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+    if(devlp>0)
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d34 1
+a34 1
+      
+@
+
+
+1.3
+log
+@devlp used in condn
+@
+text
+@a13 1
+      return -1;
+d15 1
+a21 1
+      return 0;
+d28 1
+d30 5
+a34 1
+    return 0;
+@
+
+
+1.2
+log
+@filp is used in place of devlp
+@
+text
+@d18 1
+a18 1
+    if((filp->f_mode && O_ACCMODE)==O_WRONLY)
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d18 1
+a18 1
+    if((devlp->f_mode && O_ACCMODE)==WRONLY)
+@
